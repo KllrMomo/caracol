@@ -19,10 +19,18 @@ function Escuelas () {
           <p className="texto-visita">Descubre todas nuestras salas de exhibicion con un recorrido completo del mundo</p>
           
           <div className="salas-container">
-            <img src ="images/Imagines-Salas.png" alt="Salas de exhibición" className="sala"/>
             <img src="/images/Sala-Tierra.png" alt="Sala de la Tierra" className="sala-tierra"/>
             <img src="/images/Sala-Cielo.png" alt="Sala del Cielo" className="sala-cielo"/>
             <img src="/images/Sala-Mar.png" alt="Sala del Mar" className="sala-mar"/>
+            <img src="/images/Planetario.png" alt="Planetario" className="planetario"/>
+          </div>
+          <p className="texto-visita2">* Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
+          <p className="texto-visita3">Y exploren con sensorama</p>
+          <div className="sensorama-container">
+            <img src="/images/Sensorama.png" alt="Sensorama" className="sensorama"/>
+            <div className="texto-sensorama-container">
+              <p className="texto-sensorama">Sensorama es una experiencia inmersiva que combina imágenes, sonidos y efectos especiales para sumergir a los visitantes en un mundo de sensaciones.</p>
+            </div>
           </div>
         </section>
       </main>
