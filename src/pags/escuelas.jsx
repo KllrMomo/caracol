@@ -8,13 +8,22 @@ function Escuelas () {
       <main className="main">
         <section className="portada">
           <img src="/images/Escuela.png" alt="Imagen Escuelas" className="imagen-portada"/>
-          <img src="/images/Banner.png" alt="Banner" className="banner"/>
+          <div className="banner">
+            <p className="banner-texto1">¡Trae a tus estudiantes a vivir la experiencia Caracol!</p>
+            <p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>
+          </div>
         </section>
 
         <section className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
-          <img src="/images/texto-visita.png" alt="visita" className="texto-visita"/>
-          <img src="images/Imagines-Salas.png" alt="Salas" className="salas"/>
+          <p className="texto-visita">Descubre todas nuestras salas de exhibicion con un recorrido completo del mundo</p>
+          
+          <div className="salas-container">
+            <img src ="images/Imagines-Salas.png" alt="Salas de exhibición" className="sala"/>
+            <img src="/images/Sala-Tierra.png" alt="Sala de la Tierra" className="sala-tierra"/>
+            <img src="/images/Sala-Cielo.png" alt="Sala del Cielo" className="sala-cielo"/>
+            <img src="/images/Sala-Mar.png" alt="Sala del Mar" className="sala-mar"/>
+          </div>
         </section>
       </main>
 
