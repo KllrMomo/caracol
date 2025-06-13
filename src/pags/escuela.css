@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 body, html {
     margin: 0;
     padding-top: 0px;
@@ -18,6 +20,7 @@ body, html {
 .imagen-portada {
     position: absolute;
     width: 100%;
+    height: 100%;
     height: auto;
     z-index: 0;
     object-fit: cover;
@@ -25,13 +28,41 @@ body, html {
 
 .banner {
     position: absolute;
-    display: block;
+    display: flex;
     z-index: 3;
-    top: 160px;
+    
+    background-color: rgba(11, 32, 60, 0.35);
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+    top: 30%;
+    transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
 }
 
+.banner-texto1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'urbanist', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.banner-texto2 {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'urbanist', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
 
 /*-- Visita Caracol --*/
 .visita-caracol {
@@ -50,20 +81,71 @@ body, html {
 
 .texto-visita {
     position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 120px;
+    width: 95%;
+    height: auto;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
 
-.salas {
+.sala,.salas-container {
     position: absolute;
-    top: 200px;
+    display: flex;
+    top: 100px;
     left: 50%;
     width: 95%;
     height: auto;
     transform: translateX(-50%);
 }
 
+.sala-tierra {
+    position: absolute;
+    top: 100px;
+    left: 2%;
+    width: 24%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.sala-tierra:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sala-cielo {
+    position: absolute;
+    top: 98px;
+    left: 26.5%;
+    width: 24%;
+    height: auto;
+    border-radius: 22px;
+}
+
+.sala-cielo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sala-mar {
+    position: absolute;
+    top: 100px;
+    left: 50.7%;
+    width: 24%;
+    height: auto;
+    border-radius: 22px;
+}
+
+.sala-mar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
 /*-- Footer --*/
 .footer {
@@ -81,4 +163,61 @@ body, html {
     top: 50%;
     font-size: 14px;
     color: #000000;
+}
+
+/*-- Responsive Styles --*/
+@media (min-width: 400px) and (max-width: 800px) {
+    .portada {
+        height: 100vh;
+    }
+    .imagen-portada {
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        object-fit: cover;
+    }
+    .banner {
+        width: 80%;
+        height: 300px;
+        top: 30%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .banner-texto1 {
+        font-size: 24px;
+    }
+
+    .banner-texto2 {
+        font-size: 16px;
+    }
+
+    .texto-visita {
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sala-tierra{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: auto;
+    }
+
+    .sala-cielo {
+        width: 90%;
+        height: auto;
+        top: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sala-mar {
+        width: 90%;
+        height: auto;
+        top: 1100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
