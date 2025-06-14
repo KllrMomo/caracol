@@ -6,6 +6,8 @@ function Escuelas () {
     return (
     <Container maxWidth="false" disableGutters>
       <main className="main">
+        <img src="/images/Iconos.png" alt="Iconos" className="iconos"/>
+        
         <section className="portada">
           <img src="/images/Escuela.png" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
@@ -13,6 +15,10 @@ function Escuelas () {
             <p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>
           </div>
         </section>
+
+        <div className="iconos-container">
+          
+        </div>
 
         <section className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>

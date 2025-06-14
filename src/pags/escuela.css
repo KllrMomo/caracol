@@ -64,6 +64,15 @@ body, html {
     text-align: center;
 }
 
+/*-- Iconos --*/
+.iconos {
+    display: flex;
+    position: fixed;
+    top: 110px;
+    right: 1%;
+    z-index: 1000;
+}
+
 /*-- Visita Caracol --*/
 .visita-caracol {
     position: relative;
@@ -486,6 +495,11 @@ body, html {
     .portada {
         height: 100vh;
     }
+
+    .iconos {
+        display: none;
+    }
+
     .imagen-portada {
         width: 100%;
         height: 100%;
