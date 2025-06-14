@@ -29,8 +29,35 @@ function Escuelas () {
           <div className="sensorama-container">
             <img src="/images/Sensorama.png" alt="Sensorama" className="sensorama"/>
             <div className="texto-sensorama-container">
-              <p className="texto-sensorama">Sensorama es una experiencia inmersiva que combina imágenes, sonidos y efectos especiales para sumergir a los visitantes en un mundo de sensaciones.</p>
+              <p className="texto-sensorama">Explora seres vivos, elementos de la naturaleza y objetos que tenemos en el museo, utilizando solamente tu tacto. <br />
+              ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? Descúbrelo en este divertido taller. </p>
+
+              <p className="texto-sensorama2">Incluido en tu visita para escuelas con más de 180 alumnos</p>
             </div>
+
+            
+          </div>
+          <img src="/images/PROGRAMA-RECORIDO.png" alt="Programa tu Recorrido" className="recorrido"/>
+          
+          <p className="texto-recorrido">
+            En horario de: <br />
+            Martes a Domingo <br />
+            9:00 am a 4:00 pm
+          </p>
+
+          <img src="/images/DISPONIBILIDAD-visita.png" alt="Disponibilidad" className="disponibilidad-visita"/>
+          <img src="/images/Disponibilidad-movil.png" alt="Calendario" className="disponibilidad-visita-movil"/>
+        </section>
+
+        <section className="ciencia-aire-libre">
+          <img src="/images/CIENCIA-LIBRE.png" alt="Ciencia al Aire Libre" className="ciencia"/>
+
+          <p className="texto-ciencia">Descubre las maravillas de nuestros ecosistemas y aprende sobre su flora y fauna en los <br />recorridos interpretativos que tenemos para tus alumnos.</p>
+          <p className="texto-ciencia2">*Mínimo 30 alumnos</p>
+
+          <div className="paseo-bahia-container">
+            <img src="/images/paseo-bahia.png" alt="Paseo por la Bahía" className="paseo-bahia"/>
+            <p className="titulo-paseo">PASEO EN LA BAHÍA</p>
           </div>
         </section>
       </main>

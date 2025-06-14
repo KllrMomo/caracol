@@ -7,6 +7,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: 'Urbanist', sans-serif;
+    color: #103B6D;
 }
 
 
@@ -54,7 +55,7 @@ body, html {
 
 .banner-texto2 {
     position: absolute;
-    top: 200px;
+    top: 240px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 24px;
@@ -68,7 +69,7 @@ body, html {
     position: relative;
     width: 100%;
     top: 80px;
-    height: 240vh;
+    height: 265vh;
     overflow: hidden;
 }
 
@@ -84,7 +85,7 @@ body, html {
     width: 95%;
     height: auto;
     font-size: 20px;
-    color: #000000;
+    color: #103B6D;
     font-weight: 700;
     text-align: center;
     left: 50%;
@@ -93,11 +94,11 @@ body, html {
 
 .texto-visita2 {
     position: absolute;
-    top: 800px;
+    top: 700px;
     width: 95%;
     height: auto;
     font-size: 14px;
-    color: #000000;
+    color: #103B6D;
     font-weight: 800;
     text-align: center;
     left: 50%;
@@ -106,11 +107,11 @@ body, html {
 
 .texto-visita3 {
     position: absolute;
-    top: 900px;
+    top: 800px;
     width: 95%;
     height: auto;
     font-size: 18px;
-    color: #000000;
+    color: #103B6D;
     font-weight: 800;
     text-align: center;
     left: 50%;
@@ -126,6 +127,7 @@ body, html {
     width: 97%;
     height: auto;
     transform: translateX(-50%);
+    
 }
 
 .sala-tierra {
@@ -206,7 +208,7 @@ body, html {
     width: 95%;
     height: auto;
     font-size: 20px;
-    color: #000000;
+    color: #103B6D;
     font-weight: 700;
     text-align: center;
     left: 50%;
@@ -215,7 +217,7 @@ body, html {
 
 .sensorama {
     position: absolute;
-    top: 990px;
+    top: 900px;
     left: 2%;
     width: 24%;
     height: auto;
@@ -224,15 +226,133 @@ body, html {
 
 .texto-sensorama {
     position: absolute;
-    top: 990px;
+    top: 62.5rem;
+    width: 67%;
+    height: auto;
+    font-size: 20px;
+    color: #103B6D;
+    font-weight: 700;
+    text-align: center;
+    left: 85%;
+    transform: translateX(-80%);
+}
+
+.texto-sensorama2 {
+    position: absolute;
+    top: 70rem;
+    width: 67%;
+    height: auto;
+    font-size: 16px;
+    color: #103B6D;
+    font-weight: 700;
+    text-align: center;
+    left: 85%;
+    transform: translateX(-80%);
+}
+
+/*-- Recorrido --*/
+.recorrido {
+    position: absolute;
+    display: flex;
+    top: 1420px;
+    left: 35%;
+    width: 45%;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+.texto-recorrido {
+    position: absolute;
+    top: 90rem;
+    font-size: 24px;
+    color: #103B6D;
+    font-weight: 700;
+    text-align: center;
+    left: 78%;
+    transform: translateX(-50%);
+}
+
+.disponibilidad-visita {
+    position: absolute;
+    top: 106.5rem;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.disponibilidad-visita-movil {
+    display: none;
+}
+
+/*-- Ciencia al Aire Libre --*/
+.ciencia-aire-libre {
+    position: relative;
+    width: 100%;
+    top: 80px;
+    height: 265vh;
+    overflow: hidden;
+}
+
+.ciencia {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.texto-ciencia {
+    position: absolute;
+    top: 9.063rem;
     width: 95%;
     height: auto;
     font-size: 20px;
-    color: #000000;
+    color: #103B6D;
     font-weight: 700;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.texto-ciencia2 {
+    position: absolute;
+    top: 15rem;
+    width: 95%;
+    height: auto;
+    font-size: 16px;
+    color: #103B6D;
+    font-weight: 800;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.paseo-bahia {
+    position: absolute;
+    top: 20rem;
+    width: 30%;
+    height: auto;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.paseo-bahia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.titulo-paseo {
+    position: absolute;
+    width: 62%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    top: 18rem;
+    left: 85%;
+    transform: translateX(-80%);
 }
 
 /*-- Footer --*/
@@ -277,7 +397,22 @@ body, html {
     }
 
     .banner-texto2 {
+        top: 180px;
         font-size: 16px;
+    }
+
+    .visita-caracol {
+        position: relative;
+        width: 100%;
+        top: 80px;
+        height: 100vh;
+        overflow: visible;
+    }
+
+    .visita {
+        width:  90%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .texto-visita {
@@ -343,5 +478,98 @@ body, html {
         transform: translateX(-50%) translateY(-5px);
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .texto-visita2 {
+        top: 2140px;
+        font-size: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .texto-visita3 {
+        top: 2200px;
+        font-size: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sensorama-container {
+        position: absolute;
+        display: flex;
+        left: 50%;
+        width: 95%;
+        height: auto;
+        transform: translateX(-50%);
+    }
+
+    .sensorama {
+        width: 90%;
+        height: auto;
+        top: 2260px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .sensorama-container-texto {
+        top: 2260px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .texto-sensorama {
+        top: 2650px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .texto-sensorama2 {
+        top: 2850px;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .recorrido {
+        position: absolute;
+        display: flex;
+        top: 2950px;
+        left: 50%;
+        width: 90%;
+        height: auto;
+        transform: translateX(-50%);
+    }
+
+    .texto-recorrido {
+        position: absolute;
+        top: 3030px;
+        font-size: 20px;
+        color: #103B6D;
+        font-weight: 700;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .disponibilidad-visita {
+        display: none;
+    }
+
+    .disponibilidad-visita-movil {
+        display: block;
+        position: absolute;
+        top: 3150px;
+        width: 100%;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /*-- ciencia-aire-libre --*/
+    .ciencia-aire-libre {
+        top: 450vh;
+        height: 450vh;
     }
 }
