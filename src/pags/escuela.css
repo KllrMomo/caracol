@@ -326,6 +326,15 @@ body, html {
     transform: translateX(-50%);
 }
 
+/*-- Paseo Bahía --*/
+.paseo-bahia-container {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+}
 .paseo-bahia {
     position: absolute;
     top: 20rem;
@@ -347,12 +356,111 @@ body, html {
     width: 62%;
     height: auto;
     color: #103B6D;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
     text-align: center;
     top: 18rem;
     left: 85%;
     transform: translateX(-80%);
+}
+
+.texto-paseo1 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    top: 28rem;
+    left: 55%;
+    transform: translateX(-80%);
+    line-height: 27px;
+    letter-spacing: 1%;
+}
+
+.texto-paseo2{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    top: 28rem;
+    left: 90%;
+    transform: translateX(-80%);
+    word-spacing: 1%;
+    line-height: 40px;
+}
+
+/*-- Bufadora --*/
+.bufadora-container {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+.bufadora {
+    position: absolute;
+    top: 47rem;
+    width: 30%;
+    height: auto;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.bufadora:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.titulo-bufadora {
+    position: absolute;
+    width: 62%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    top: 45rem;
+    left: 85%;
+    transform: translateX(-80%);
+}
+
+.texto-bufadora1 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    top: 55rem;
+    left: 55%;
+    transform: translateX(-80%);
+    line-height: 27px;
+    letter-spacing: 1%;
+}
+
+.texto-bufadora2 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    top: 55rem;
+    left: 90%;
+    transform: translateX(-80%);
+    word-spacing: 1%;
+    line-height: 40px;
 }
 
 /*-- Footer --*/
@@ -374,7 +482,7 @@ body, html {
 }
 
 /*-- Responsive Styles --*/
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 800px) {
     .portada {
         height: 100vh;
     }
