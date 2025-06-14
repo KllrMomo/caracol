@@ -58,6 +58,15 @@ function Escuelas () {
           <div className="paseo-bahia-container">
             <img src="/images/paseo-bahia.png" alt="Paseo por la Bahía" className="paseo-bahia"/>
             <p className="titulo-paseo">PASEO EN LA BAHÍA</p>
+            <p className="texto-paseo1">Embárcate en una emocionante <br />experiencia en barco mientras <br /> observas y conoces las <br />maravillas del mar.</p>
+            <p className="texto-paseo2">Duración: <br /> 1.5 horas aprox.</p>
+          </div>
+
+          <div  className="bufadora-container">
+            <img src="/images/Bufadora.png" alt="Bufadora" className="bufadora"/>
+            <p className="titulo-bufadora">LA BUFADORA DESDE EL MAR</p>
+            <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras navegas y aprendes sobre las criaturas que habitan nuestras costas. </p>
+            <p className="texto-bufadora2">Duración: <br /> 4 horas aprox.</p>
           </div>
         </section>
       </main>
