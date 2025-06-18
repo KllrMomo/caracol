@@ -71,9 +71,26 @@ function Escuelas () {
           <div  className="bufadora-container">
             <img src="/images/Bufadora.png" alt="Bufadora" className="bufadora"/>
             <p className="titulo-bufadora">LA BUFADORA DESDE EL MAR</p>
-            <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras navegas y aprendes sobre las criaturas que habitan nuestras costas. </p>
+            <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras navegas y aprendes sobre las criaturas que habitan nuestras costas.</p>
             <p className="texto-bufadora2">Duración: <br /> 4 horas aprox.</p>
           </div>
+
+          <div className="avistamiento-de-ballenas">
+            <img src="/images/Ballenas.png" alt="Avistamiento de Ballenas" className="ballenas"/>
+            <div className="texto-ballenas-container"> 
+              <p className="titulo-ballenas">AVISTAMIENTO DE BALLENAS</p>
+              <p className="texto-ballenas1">Conoce la flora y fauna de la región, mientras aprendes sobre los ecosistemas que nos rodean.</p>
+              <p className="texto-ballenas2">Duración: <br /> 1.5 horas aprox.</p>
+            </div>
+          </div>
+          
+          <img src="/images/SUMERGETE.png" alt="SUMERGETE" className="sumergete"/>
+
+          <img src="/images/DISPONIBILIDAD-ciencia.png" alt="Programa Ciencia al Aire Libre" className="disponibilidad-ciencia"/>
+        </section>
+
+        <section>
+
         </section>
       </main>
 
