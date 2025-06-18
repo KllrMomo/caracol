@@ -298,9 +298,9 @@ body, html {
 .ciencia-aire-libre {
     position: relative;
     width: 100%;
-    top: 80px;
+    top: 60px;
     height: 265vh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .ciencia {
@@ -352,12 +352,6 @@ body, html {
     left: 5%;
     overflow: hidden;
     border-radius: 22px;
-}
-
-.paseo-bahia:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .titulo-paseo {
@@ -423,12 +417,6 @@ body, html {
     border-radius: 22px;
 }
 
-.bufadora:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .titulo-bufadora {
     position: absolute;
     width: 62%;
@@ -437,7 +425,6 @@ body, html {
     font-weight: 900;
     font-size: 40px;
     text-align: center;
-    top: 45rem;
     left: 85%;
     transform: translateX(-80%);
 }
@@ -471,6 +458,90 @@ body, html {
     word-spacing: 1%;
     line-height: 40px;
 }
+
+/*-- Avistamiento de Ballenas --*/
+.avistamiento-de-ballenas {
+    position: absolute;
+    display: flex;
+    top: 74.5rem;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+.ballenas {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 5%;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+
+.titulo-ballenas {
+    position: absolute;
+    width: 62%;
+    height: auto;
+    color: #103B6D;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    left: 85%;
+    transform: translateX(-80%);
+}
+
+.texto-ballenas1 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 10rem;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    left: 55%;
+    transform: translateX(-80%);
+    line-height: 27px;
+    letter-spacing: 1%;
+}
+
+.texto-ballenas2 {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 10rem;
+    color: #103B6D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    left: 90%;
+    transform: translateX(-80%);
+    word-spacing: 1%;
+    line-height: 40px;
+}
+
+.sumergete {
+    position: absolute;
+    display: flex;
+    top: 100rem;
+    left: 50%;
+    width: 70%;
+    height: auto;
+    transform: translateX(-50%);
+}
+
+.disponibilidad-ciencia {
+    position: absolute;
+    top: 120rem;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 /*-- Footer --*/
 .footer {
