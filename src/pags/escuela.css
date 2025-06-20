@@ -362,7 +362,7 @@ body, html {
     font-weight: 900;
     font-size: 40px;
     text-align: center;
-    top: 18rem;
+    top: 20rem;
     left: 85%;
     transform: translateX(-80%);
 }
@@ -420,6 +420,7 @@ body, html {
 .titulo-bufadora {
     position: absolute;
     width: 62%;
+    top: 47rem;
     height: auto;
     color: #103B6D;
     font-weight: 900;
@@ -562,7 +563,7 @@ body, html {
 }
 
 /*-- Responsive Styles --*/
-@media (min-width: 300px) and (max-width: 800px) {
+@media (min-width: 200px) and (max-width: 800px) {
     .portada {
         height: 100vh;
     }
@@ -625,12 +626,6 @@ body, html {
         height: auto;
     }
 
-    .sala-tierra:hover {
-        transform: translateX(-50%) translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
     .sala-cielo {
         width: 90%; 
         height: auto;
@@ -653,24 +648,12 @@ body, html {
         transform: translateX(-50%);
     }
 
-    .sala-mar:hover {
-        transform: translateX(-50%) translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
     .planetario {
         width: 90%;
         height: auto;
         top: 1600px;
         left: 50%;
         transform: translateX(-50%);
-    }
-
-    .planetario:hover {
-        transform: translateX(-50%) translateY(-5px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .texto-visita2 {
