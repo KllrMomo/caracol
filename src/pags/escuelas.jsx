@@ -90,15 +90,9 @@ function Escuelas () {
         </section>
 
         <section>
-
+          
         </section>
       </main>
-
-      <footer className="footer">
-        <div className="footer-content">
-          <p>© 2023 Caracol Museo de Ciencias S.A. Todos los derechos reservados.</p>
-        </div>
-      </footer>
     </Container>
   );
 }
