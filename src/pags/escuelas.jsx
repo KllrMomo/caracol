@@ -89,8 +89,12 @@ function Escuelas () {
           <img src="/images/DISPONIBILIDAD-ciencia.png" alt="Programa Ciencia al Aire Libre" className="disponibilidad-ciencia"/>
         </section>
 
-        <section>
-          
+        <section className="final">
+          <p className="texto-final">Todas nuestras exhibiciones/actividades están <br /> disponibles para los niveles de preescolar hasta <br /> universidad.</p>
+
+          <img src="images/perder.png" alt="Nadie se tiene que perder de la diversión"  className="perder"/>
+
+          <p className="texto-final2">(restricciones aplican)</p>
         </section>
       </main>
     </Container>
