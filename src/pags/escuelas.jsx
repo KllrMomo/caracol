@@ -86,15 +86,38 @@ function Escuelas () {
           
           <img src="/images/SUMERGETE.png" alt="SUMERGETE" className="sumergete"/>
 
+          <img src="/images/SUMERGETE-movil.png" alt="SUMERGETE" className="sumergete-movil"/>
+
           <img src="/images/DISPONIBILIDAD-ciencia.png" alt="Programa Ciencia al Aire Libre" className="disponibilidad-ciencia"/>
+
+          <img src="/images/Disponibilidad-ciencia-movil.png" alt="Programa Ciencia al Aire Libre" className="disponibilidad-ciencia-movil"/>
         </section>
 
         <section className="final">
-          <p className="texto-final">Todas nuestras exhibiciones/actividades están <br /> disponibles para los niveles de preescolar hasta <br /> universidad.</p>
+          <p className="texto-final">Todas nuestras exhibiciones/actividades están disponibles para los niveles de preescolar hasta universidad.</p>
 
           <img src="images/perder.png" alt="Nadie se tiene que perder de la diversión"  className="perder"/>
 
+          <img src="images/Perder-movil.png" alt="Nadie se tiene que perder de la diversión"  className="perder-movil"/>
+
           <p className="texto-final2">(restricciones aplican)</p>
+        </section>
+
+        <section className="mas-informacion">
+          <p className="info1">Para más información no dudes en contactarnos</p>
+          <div className="telefono-text">
+            <p>Teléfono</p>
+            <p>(646) 177-0897</p>
+            <p>(646) 152-1993</p>
+          </div>
+          <div className="correo-text">
+            <p>Correo Electrónico</p>
+            <p>paola@caracolbc.org</p>
+          </div>
+          <div className="whatsapp-text">
+            <p>WhatAapp</p>
+            <p>(646) 413-0544</p>
+          </div>
         </section>
       </main>
     </Container>
