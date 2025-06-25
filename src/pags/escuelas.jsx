@@ -6,6 +6,11 @@ function Escuelas () {
     return (
     <Container maxWidth="false" disableGutters>
       <main className="main">
+
+        <header>
+          <img src ="/images/header.png" alt="Logo Caracol" className="header"/>
+        </header>
+
         <img src="/images/Iconos.png" alt="Iconos" className="iconos"/>
         
         <section className="portada">
@@ -105,18 +110,20 @@ function Escuelas () {
 
         <section className="mas-informacion">
           <p className="info1">Para más información no dudes en contactarnos</p>
-          <div className="telefono-text">
-            <p>Teléfono</p>
-            <p>(646) 177-0897</p>
-            <p>(646) 152-1993</p>
-          </div>
-          <div className="correo-text">
-            <p>Correo Electrónico</p>
-            <p>paola@caracolbc.org</p>
-          </div>
-          <div className="whatsapp-text">
-            <p>WhatAapp</p>
-            <p>(646) 413-0544</p>
+          <div  className="mas-informacion-container">
+            <div className="telefono-text">
+              <p className="tel">Teléfono</p>
+              <p className="tel1">(646) 177-0897</p>
+              <p className="tel2">(646) 152-1993</p>
+            </div>
+            <div className="correo-text">
+              <p className="correo">Correo Electrónico</p>
+              <p className="lol">paola@caracolbc.org</p>
+            </div>
+            <div className="whatsapp-text">
+              <p className="whatsapp">WhatAapp</p>
+              <p className="whattel">(646) 413-0544</p>
+            </div>
           </div>
         </section>
       </main>
