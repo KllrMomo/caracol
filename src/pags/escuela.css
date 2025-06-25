@@ -73,6 +73,14 @@ body, html {
     z-index: 1000;
 }
 
+/* -- header -- */
+.header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
 /*-- Visita Caracol --*/
 .visita-caracol {
     position: relative;
@@ -148,12 +156,6 @@ body, html {
     border-radius: 22px;
 }
 
-.sala-tierra:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .sala-cielo {
     position: absolute;
     top: 98px;
@@ -161,12 +163,6 @@ body, html {
     width: 24%;
     height: auto;
     border-radius: 22px;
-}
-
-.sala-cielo:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sala-mar {
@@ -178,12 +174,6 @@ body, html {
     border-radius: 22px;
 }
 
-.sala-mar:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .planetario {
     position: absolute;
     top: 100px;
@@ -192,13 +182,6 @@ body, html {
     height: auto;
     border-radius: 22px;
 }
-
-.planetario:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 /*- Sensiorama -*/
 .sensorama-container {
@@ -532,6 +515,10 @@ body, html {
     transform: translateX(-50%);
 }
 
+.sumergete-movil {
+    display: none;
+}
+
 .disponibilidad-ciencia {
     position: absolute;
     top: 123rem;
@@ -539,6 +526,10 @@ body, html {
     height: auto;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.disponibilidad-ciencia-movil {
+    display: none;
 }
 
 /*-- Final --*/
@@ -573,6 +564,10 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     top: 250px;
+}
+
+.perder-movil {
+    display: none;
 }
 
 .texto-final2 {
@@ -614,13 +609,70 @@ body, html {
     text-transform: uppercase;
 }
 
-.telefono-texto {
-    top: 25rem;
-    font-size: 20px;
-    color: #103B6D;
-    font-weight: 700;
+    
+.mas-informacion-container {
+    top: 7rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    align-items: center;
+    gap: 5rem;
+    font-size: large;
+}
+
+.telefono-text {
     text-align: center;
 }
+
+.tel {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.tel1 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tel2 {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.correo-text {
+    text-align: center;
+}
+
+.correo {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.lol {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.whatsapp-text {        
+    text-align: center;
+}
+
+.whatsapp {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.whattel {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 /*-- Footer --*/
 .footer {
@@ -641,7 +693,7 @@ body, html {
 }
 
 /*-- Responsive Styles --*/
-@media (min-width: 200px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 800px) {
     .portada {
         height: 100vh;
     }
@@ -658,26 +710,27 @@ body, html {
     }
     .banner {
         width: 80%;
-        height: 300px;
+        height: 18.75rem;
         top: 30%;
         transform: translateY(-50%);
         left: 50%;
         transform: translateX(-50%);
     }
+
     .banner-texto1 {
         font-size: 24px;
     }
 
     .banner-texto2 {
-        top: 180px;
+        top: 11.25rem;
         font-size: 16px;
     }
 
     .visita-caracol {
         position: relative;
         width: 100%;
-        top: 80px;
-        height: 385vh;
+        top: 5rem;
+        height: 530vh;
         overflow: hidden;
     }
 
@@ -703,7 +756,7 @@ body, html {
     .sala-cielo {
         width: 90%; 
         height: auto;
-        top: 600px;
+        top: 37.5rem;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -711,7 +764,7 @@ body, html {
     .sala-mar {
         width: 90%;
         height: auto;
-        top: 1100px;
+        top: 68.75rem;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -719,20 +772,20 @@ body, html {
     .planetario {
         width: 90%;
         height: auto;
-        top: 1600px;
+        top: 100rem;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-visita2 {
-        top: 2140px;
+        top: 136.5rem;
         font-size: 12px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-visita3 {
-        top: 2200px;
+        top: 139.5rem;
         font-size: 16px;
         left: 50%;
         transform: translateX(-50%);
@@ -750,27 +803,27 @@ body, html {
     .sensorama {
         width: 90%;
         height: auto;
-        top: 2260px;
+        top: 142rem;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .sensorama-container-texto {
-        top: 2260px;
+        top:  160rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-sensorama {
-        top: 2650px;
+        top: 170rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-sensorama2 {
-        top: 2850px;
+        top:  182rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
@@ -779,7 +832,7 @@ body, html {
     .recorrido {
         position: absolute;
         display: flex;
-        top: 2950px;
+        top:  188rem;
         left: 50%;
         width: 90%;
         height: auto;
@@ -788,7 +841,7 @@ body, html {
 
     .texto-recorrido {
         position: absolute;
-        top: 3030px;
+        top: 194rem;
         font-size: 20px;
         color: #103B6D;
         font-weight: 700;
@@ -804,7 +857,7 @@ body, html {
     .disponibilidad-visita-movil {
         display: block;
         position: absolute;
-        top: 3150px;
+        top:  202rem;
         width: 100%;
         height: auto;
         left: 50%;
@@ -814,7 +867,7 @@ body, html {
     /*-- ciencia-aire-libre --*/
     .ciencia-aire-libre {
         top: 10rem;
-        height: 310vh;
+        height: 412vh;
         overflow: hidden;
     }
 
@@ -1053,13 +1106,12 @@ body, html {
 
     .final {
         top: 10rem;
-        height: 52vh;
+        height: 68vh;
         overflow: hidden;
     }
 
     .texto-final {
         position: absolute;
-        width: 90%;
         height: auto;
         font-size: 24px;
         color: #103B6D;
@@ -1077,6 +1129,7 @@ body, html {
 
     .perder-movil {
         position: absolute;
+        display: flex;
         width: 90%;
         height: auto;
         left: 50%;
@@ -1100,8 +1153,8 @@ body, html {
     }
 
     .mas-informacion {
-        top: 15rem;
-        height: 52vh;
+        top: 11rem;
+        height: 64vh;
         overflow: hidden;
     }
 
@@ -1118,4 +1171,63 @@ body, html {
         letter-spacing: 4.8%;
         line-height: 40px;
     }
+
+    
+    .mas-informacion-container {
+        top: 7rem;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        align-items: center;
+    }
+
+    .telefono-text {
+        text-align: center;
+    }
+
+    .tel {
+        font-weight: 900;
+        text-transform: uppercase;
+        
+    }
+
+    .tel1 {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .tel2 {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .correo-text {
+        text-align: center;
+    }
+
+    .correo {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .lol {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .whatsapp-text {
+        text-align: center;
+    }
+
+    .whatsapp {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .whattel {text-decoration: underline;
+        cursor: pointer;
+    }
+
 }
