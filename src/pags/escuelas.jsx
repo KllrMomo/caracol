@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import {Container} from "@mui/material";
-import './escuela.css'; // Import the CSS file for styling
+import './escuela.css';
 
 function Escuelas () {
     return (
@@ -110,22 +110,23 @@ function Escuelas () {
 
         <section className="mas-informacion">
           <p className="info1">Para más información no dudes en contactarnos</p>
-          <div  className="mas-informacion-container">
+          <div className="mas-informacion-container">
             <div className="telefono-text">
               <p className="tel">Teléfono</p>
-              <p className="tel1">(646) 177-0897</p>
-              <p className="tel2">(646) 152-1993</p>
+              <p className="tel1"><a  href="tel:6461770897">(646) 177-0897</a></p>
+              <p className="tel2"><a href="tel:6461521993">(646) 152-1993</a></p>
             </div>
             <div className="correo-text">
               <p className="correo">Correo Electrónico</p>
-              <p className="lol">paola@caracolbc.org</p>
+              <p className="correo1"><a href="mailto:paola@caracolbc.org">paola@caracolbc.org</a></p>
             </div>
             <div className="whatsapp-text">
-              <p className="whatsapp">WhatAapp</p>
-              <p className="whattel">(646) 413-0544</p>
+              <p className="whatsapp">WhatsApp</p>
+              <p><a className="whattel" href="https://wa.me/526464130544"> (646) 413-0544</a></p>
             </div>
           </div>
         </section>
+
       </main>
     </Container>
   );
