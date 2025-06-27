@@ -68,7 +68,7 @@ body, html {
 .iconos {
     display: flex;
     position: fixed;
-    top: 110px;
+    top: 140px;
     right: 1%;
     z-index: 1000;
 }
@@ -79,6 +79,25 @@ body, html {
     width: 100%;
     height: auto;
     z-index: 1000;
+}
+
+/*-- Footer --*/
+.footer {
+    top: 10rem;
+    width: 100%;
+    height: 100px;
+    background-color: #7d6dcd;
+    text-align: center;
+    line-height: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    font-size: 14px;
+    color: #000000;
 }
 
 /*-- Visita Caracol --*/
@@ -673,33 +692,38 @@ body, html {
     cursor: pointer;
 }
 
-
-/*-- Footer --*/
-.footer {
-    width: 100%;
-    height: 100px;
-    background-color: #7d6dcd;
-    text-align: center;
-    line-height: 50px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    font-size: 14px;
-    color: #000000;
-}
-
 /*-- Responsive Styles --*/
-@media (min-width: 400px) and (max-width: 800px) {
+@media (max-width: 400px) {
+    body, html {
+        margin: 0;
+        height: 100%;
+        font-family: 'Urbanist', sans-serif;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+
     .portada {
         height: 100vh;
     }
 
     .iconos {
         display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .footer {
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #7d6dcd;
+        text-align: center;
+        line-height: 50px;
     }
 
     .imagen-portada {
@@ -867,7 +891,7 @@ body, html {
     /*-- ciencia-aire-libre --*/
     .ciencia-aire-libre {
         top: 10rem;
-        height: 412vh;
+        height: 430vh;
         overflow: hidden;
     }
 
@@ -878,17 +902,18 @@ body, html {
     }
 
     .texto-ciencia {
-        top: 120px;
+        top: 8rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-ciencia2 {
-        top: 255px;
+        top: 16.5rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
+        font-size: small;
     }
 
     .paseo-bahia-container {
@@ -916,7 +941,7 @@ body, html {
         font-weight: 900;
         font-size: 33px;
         text-align: center;
-        top: 35rem;
+        top: 37rem;
         left: 50%;
         transform: translateX(-50%);
         letter-spacing: 1%;
@@ -930,7 +955,7 @@ body, html {
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 40rem;
+        top: 41.5rem;
         left: 50%;
         transform: translateX(-50%);
         line-height: 27px;
@@ -945,7 +970,7 @@ body, html {
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 48rem;
+        top: 49.5rem;
         left: 50%;
         transform: translateX(-50%);
         word-spacing: 1%;
@@ -973,7 +998,7 @@ body, html {
     .titulo-bufadora {
         position: absolute;
         width: 99%;
-        top: 73rem;
+        top: 75rem;
         height: auto;
         color: #103B6D;
         font-weight: 900;
@@ -992,7 +1017,7 @@ body, html {
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 80rem;
+        top: 81.5rem;
         left: 50%;
         transform: translateX(-50%);
         line-height: 27px;
@@ -1007,7 +1032,7 @@ body, html {
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 87rem;
+        top: 88rem;
         left: 50%;
         transform: translateX(-50%);
         word-spacing: 1%;
@@ -1033,7 +1058,7 @@ body, html {
     }
 
     .titulo-ballenas {
-        top: 14rem;
+        top: 16rem;
         position: absolute;
         width: 99%;
         height: auto;
@@ -1050,7 +1075,7 @@ body, html {
         position: absolute;
         width: 90%;
         height: auto;
-        top: 22rem;
+        top: 23rem;
         color: #103B6D;
         font-weight: 700;
         font-size: 16px;
@@ -1097,7 +1122,7 @@ body, html {
     .disponibilidad-ciencia-movil {
         display: block;
         position: absolute;
-        top: 158rem;
+        top: 162rem;
         width: 100%;
         height: auto;
         left: 50%;
@@ -1134,7 +1159,7 @@ body, html {
         height: auto;
         left: 50%;
         transform: translateX(-50%);
-        top: 18.75rem;
+        top: 17.75rem;
     }
 
     .texto-final2 {
@@ -1152,9 +1177,12 @@ body, html {
         top: 24rem;
     }
 
+
+    /* -- Mas informacion -- */
+
     .mas-informacion {
         top: 11rem;
-        height: 64vh;
+        height: 85vh;
         overflow: hidden;
     }
 
@@ -1172,15 +1200,14 @@ body, html {
         line-height: 40px;
     }
 
-    
     .mas-informacion-container {
         top: 7rem;
         position: absolute;
         display: flex;
         flex-direction: column;
-        width: 95%;
-        height: auto;
         align-items: center;
+        gap: 1rem;
+        font-size: medium;
     }
 
     .telefono-text {
@@ -1226,7 +1253,8 @@ body, html {
         text-transform: uppercase;
     }
 
-    .whattel {text-decoration: underline;
+    .whattel {
+        text-decoration: underline;
         cursor: pointer;
     }
 
