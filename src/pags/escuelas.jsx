@@ -20,11 +20,7 @@ function Escuelas () {
             <p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>
           </div>
         </section>
-
-        <div className="iconos-container">
-          
-        </div>
-
+        
         <section className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
           <p className="texto-visita">Descubre todas nuestras salas de exhibicion con un recorrido completo del mundo</p>
