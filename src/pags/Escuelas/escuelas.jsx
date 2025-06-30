@@ -1,23 +1,25 @@
 import React, { useRef, useState } from "react";
 import {Container} from "@mui/material";
+import Header from "../../components/header.jsx";
 import './escuela.css';
 
 function Escuelas () {
     return (
     <Container maxWidth="false" disableGutters>
+     
       <main className="main">
 
-        <header>
-          <img src ="/images/header.png" alt="Logo Caracol" className="header"/>
+        <header className="header"> 
+          <Header />
         </header>
-
-        <img src="/images/Iconos.png" alt="Iconos" className="iconos"/>
         
+        <img src="/images/Iconos.png" alt="Iconos" className="iconos"/>
+
         <section className="portada">
           <img src="/images/Escuela.png" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
             <p className="banner-texto1">¡Trae a tus estudiantes a vivir la experiencia Caracol!</p>
-            <p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>
+            <p className="banner-texto2">Martes a Domingo <br /> 10:00 am a 5:00 pm</p>
           </div>
         </section>
         
