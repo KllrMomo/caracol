@@ -25,7 +25,7 @@
     justify-content: left;
     align-items: center;
     gap: 3rem;
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 
 .logo {
@@ -37,8 +37,8 @@
 .nav-bar {
     justify-content: space-between;
     display: flex;
-    gap: 10px;
-    margin-left: 1.5rem;
+    gap: 6px;
+    margin-left: .2rem;
     align-items: center;
 }
 
@@ -71,14 +71,12 @@
   align-items: center;        
   gap: 20px;                  
   padding: 10px;
-  margin-left: 100px;
 }
 
 .social-icons {
     display: flex;
-    gap: 10px;
-    margin-left: 160px;
-    
+    gap: 8px;
+    margin-left: 3rem;
 }
 
 .social-icon {
@@ -91,15 +89,6 @@
     text-decoration: none;
 }
 
-.horario {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 25px;
-    font-weight: 700;
-    color: #2da2d8;
-}
-
 .boletos {
     display: flex;
     align-items: center;
@@ -108,18 +97,22 @@
     font-weight: 700;
     border: white 3px solid;
     text-transform: uppercase;
-
+    text-decoration: none;
+    font-size: 19px;
 }
 
 .ri-ticket-line {
-    font-size: 19px;
+    
     margin-right: 10px;
     color: white;
     top: 2px;
 }
 
-.boletos-text {
+.boletos a {
     color: white;
-    font-size: 19px;
-    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1800px) {
+    
 }

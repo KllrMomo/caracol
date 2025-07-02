@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.footer {
+    background-color: #231f40;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: start;
+    word-break: break-word;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 3rem;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.social-icon a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Explora */
+.footer-explora {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: start;
+    padding: 2rem;
+}
+
+.footer-explora-links li {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-explora-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-explora-links a:hover {
+    color: #2da2d8;
+}
+
+/* Shapes */
+.footer-shape {
+    position: absolute;
+    top: 0;
+    left: -7%;
+}
+
+.footer-shape1 {
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+}
