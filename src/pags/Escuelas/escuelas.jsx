@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import {Container} from "@mui/material";
 import Header from "../../components/header.jsx";
+import Footer from "../../components/footer.jsx";
 import './escuela.css';
 
 function Escuelas () {
@@ -12,9 +13,29 @@ function Escuelas () {
         <header className="header"> 
           <Header />
         </header>
-        
-        <img src="/images/Iconos.png" alt="Iconos" className="iconos"/>
 
+        <div className="iconos-container">
+          <div className="iconos">
+            <div className="icon-wrapper">
+              <img src="images/Boletos.png" alt="boletos" className="boleto" />
+              <span className="tooltip">Boletos</span>
+            </div>
+            <div className="icon-wrapper">
+              <img src="images/Cielo.png" alt="cielo" className="cielo" />
+              <span className="tooltip">Sala del <br />Cielo</span>
+            </div>
+            <div className="icon-wrapper">
+              <img src="images/Tierra.png" alt="tierra" className="tierra" />
+              <span className="tooltip">Sala de la <br />Tierra</span>
+            </div>
+            <div className="icon-wrapper">
+              <img src="images/Mar.png" alt="mar" className="mar" />
+              <span className="tooltip">Sala del <br />Mar</span>
+            </div>
+          </div>
+        </div>
+
+        
         <section className="portada">
           <img src="/images/Escuela.png" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
@@ -104,6 +125,7 @@ function Escuelas () {
           <img src="images/Perder-movil.png" alt="Nadie se tiene que perder de la diversión"  className="perder-movil"/>
 
           <p className="texto-final2">(restricciones aplican)</p>
+
         </section>
 
         <section className="mas-informacion">
@@ -124,6 +146,10 @@ function Escuelas () {
             </div>
           </div>
         </section>
+
+        <footer>
+          <Footer />
+        </footer>
 
       </main>
     </Container>

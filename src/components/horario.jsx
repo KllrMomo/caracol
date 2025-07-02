@@ -1,11 +1,13 @@
 import React from "react";
+import "./horario.css";
 
 function Horario() {
   const today = new Date().getDay(); // 0 = Sunday, 6 = Saturday
 
   let mensaje = (
     <>
-      Abierto hasta<br />las 5pm
+      Abierto hasta <br /> 
+      las 5pm
     </>
   );
 

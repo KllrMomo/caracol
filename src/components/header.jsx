@@ -36,9 +36,7 @@ function Header() {
                 </a>
             </div>
 
-            <div className="horario">
-                <Horario />
-            </div>
+            <Horario />
 
             <div className="boletos">
                 <a href="">
