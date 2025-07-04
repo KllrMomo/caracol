@@ -7,8 +7,6 @@ body, html {
     width: 100%;
     height: auto;
     font-family: 'Urbanist', sans-serif;
-    color: #103B6D;
-    
 }
 
 .main {
@@ -37,38 +35,38 @@ body, html {
 
 .banner {
     position: absolute;
-    display: flex;
-    z-index: 3;
-    
-    background-color: rgba(11, 32, 60, 0.35);
-    border-radius: 10px;
-    width: 50%;
-    height: 400px;
-    top: 30%;
-    transform: translateY(-50%);
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-texto {
+    display: block;
+    background: #01122573;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.305);
+    padding: 25px 50px;
+    text-align: center;
+    font-weight: 500;
+    text-size-adjust: 100%;
 }
 
 .banner-texto1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 40px;
-    color: #FFFFFF;
-    font-weight: 700;
+    font-size: 50px;
+    color: #FFF;
+    font-weight: 800;
     text-align: center;
 }
 
 .banner-texto2 {
-    position: absolute;
-    top: 240px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 32px;
     text-align: center;
+    color: #FFF;
 }
 
 /*-- Iconos --*/
@@ -123,7 +121,7 @@ body, html {
 .visita-caracol {
     position: relative;
     width: 100%;
-    top: 80px;
+    height: auto;
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
@@ -144,7 +142,6 @@ body, html {
 .texto-visita3 {
     width: 95%;
     text-align: center;
-    color: #103B6D;
 }
 
 .texto-visita {
@@ -154,22 +151,22 @@ body, html {
 
 .texto-visita2 {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .texto-visita3 {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /*-- Salas --*/
 .salas-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: 97%;
-    margin: 1rem auto;
-    gap: 1rem;
+    margin: .5rem;
+    gap: 3rem;
 }
 
 .salas-container div {
@@ -186,96 +183,60 @@ body, html {
     align-items: flex-start;
     flex-wrap: wrap;
     width: 97%;
-    margin: 4rem auto;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .sensorama-container-texto {
     width: 100%;
     text-align: center;
     font-size: 20px;
-    color: #103B6D;
     font-weight: 700;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
 .sensorama {
     flex: 1 1 40%;
-    max-width: 30%;
+    max-width: 25%;
     border-radius: 22px;
 }
 
 .texto-sensorama,
 .texto-sensorama2 {
     flex: 1 1 45%;
-    max-width: 50%;
+    max-width: 90%;
     font-size: 18px;
-    color: #103B6D;
-    font-weight: 700;
+    font-weight: 500;
+    margin: 110px auto;
     text-align: center;
 }
+
 /*-- Recorrido --*/
-.recorrido-container {
-    width: 100%;
-    margin: 4rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 0 1rem;
-}
-
 .recorrido {
-    width: 45%;
-    max-width: 600px;
-}
-
-.recorrido img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px; /* opcional */
-}
-
-.texto-recorrido {
-    font-size: 24px;
-    color: #103B6D;
-    font-weight: 700;
     text-align: center;
-    width: 90%;
-}
-
-.disponibilidad-visita {
-    width: 90%;
-    text-align: center;
-}
-
-.disponibilidad-visita-movil {
-    display: none;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 /*-- Ciencia al Aire Libre --*/
 .ciencia-aire-libre {
     position: relative;
     width: 100%;
-    top: 80px;
-    height: 265vh;
-    overflow: visible;
+    height: auto;
+    overflow: hidden;
 }
 
 .ciencia {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .texto-ciencia {
-    position: absolute;
-    top: 9.063rem;
+    position: relative;
     width: 95%;
     height: auto;
     font-size: 20px;
-    color: #103B6D;
     font-weight: 700;
     text-align: center;
     left: 50%;
@@ -283,12 +244,10 @@ body, html {
 }
 
 .texto-ciencia2 {
-    position: absolute;
-    top: 15rem;
+    position: relative;
     width: 95%;
     height: auto;
     font-size: 16px;
-    color: #103B6D;
     font-weight: 800;
     text-align: center;
     left: 50%;
@@ -297,199 +256,127 @@ body, html {
 
 /*-- Paseo Bahía --*/
 .paseo-bahia-container {
-    position: absolute;
-    display: flex;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 5rem;
 }
+
 .paseo-bahia {
-    position: absolute;
-    top: 20rem;
-    width: 30%;
+  width: 50%; 
+  height: auto;
+}
+
+.paseo-texto {
+    max-width: 50%;
     height: auto;
-    left: 5%;
-    overflow: hidden;
-    border-radius: 22px;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    gap: 1rem;
 }
 
 .titulo-paseo {
-    position: absolute;
-    width: 62%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 900;
-    font-size: 40px;
-    text-align: center;
-    top: 20rem;
-    left: 85%;
-    transform: translateX(-80%);
+  font-size: 40px;
+  font-weight: 800;
 }
 
-.texto-paseo1 {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    top: 28rem;
-    left: 55%;
-    transform: translateX(-80%);
-    line-height: 27px;
-    letter-spacing: 1%;
+.texto-paseo1,
+.texto-paseo2 {
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
-.texto-paseo2{
-    position: absolute;
-    width: 20%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    top: 28rem;
-    left: 90%;
-    transform: translateX(-80%);
-    word-spacing: 1%;
-    line-height: 40px;
+.duracion-label {
+    background-color: #a8d8e9;
+    color: #113c6e;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.ri-time-line {
+    color: #113c6e;
+    margin-right: 5px;
+    margin: 0 5px;
+    font-size: 20px;
 }
 
 /*-- Bufadora --*/
 .bufadora-container {
-    position: absolute;
     display: flex;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    transform: translateX(-50%);
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .bufadora {
-    position: absolute;
-    top: 47rem;
-    width: 30%;
+    width: 50%; 
     height: auto;
-    left: 5%;
-    overflow: hidden;
-    border-radius: 22px;
+    
+}
+
+.bufadora-texto {
+    max-width: 50%;
+    height: auto;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    gap: 1rem;
 }
 
 .titulo-bufadora {
-    position: absolute;
-    width: 62%;
-    top: 47rem;
-    height: auto;
-    color: #103B6D;
-    font-weight: 900;
     font-size: 40px;
-    text-align: center;
-    left: 85%;
-    transform: translateX(-80%);
+    font-weight: 800;
 }
 
-.texto-bufadora1 {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    top: 55rem;
-    left: 55%;
-    transform: translateX(-80%);
-    line-height: 27px;
-    letter-spacing: 1%;
-}
-
+.texto-bufadora1,
 .texto-bufadora2 {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    top: 55rem;
-    left: 90%;
-    transform: translateX(-80%);
-    word-spacing: 1%;
-    line-height: 40px;
+    font-size: 19px;
+    font-weight: 500;
 }
+
 
 /*-- Avistamiento de Ballenas --*/
 .avistamiento-de-ballenas {
-    position: absolute;
     display: flex;
-    top: 74.5rem;
-    left: 50%;
-    width: 100%;
-    height: auto;
-    transform: translateX(-50%);
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .ballenas {
-    position: absolute;
-    width: 30%;
+    width: 50%; 
     height: auto;
-    left: 5%;
-    overflow: hidden;
-    border-radius: 22px;
+}
+
+.ballenas-texto {
+    max-width: 50%;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .titulo-ballenas {
-    position: absolute;
-    width: 62%;
-    height: auto;
-    color: #103B6D;
-    font-weight: 900;
     font-size: 40px;
-    text-align: center;
-    left: 85%;
-    transform: translateX(-80%);
+    font-weight: 800;
 }
 
-.texto-ballenas1 {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    top: 10rem;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    left: 55%;
-    transform: translateX(-80%);
-    line-height: 27px;
-    letter-spacing: 1%;
-}
-
+.texto-ballenas1,
 .texto-ballenas2 {
-    position: absolute;
-    width: 20%;
-    height: auto;
-    top: 10rem;
-    color: #103B6D;
-    font-weight: 700;
-    font-size: 18px;
-    text-align: center;
-    left: 90%;
-    transform: translateX(-80%);
-    word-spacing: 1%;
-    line-height: 40px;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 500;
 }
 
 .sumergete {
-    position: absolute;
-    display: flex;
-    top: 100rem;
-    left: 50%;
-    width: 70%;
-    height: auto;
-    transform: translateX(-50%);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .sumergete-movil {
@@ -510,21 +397,17 @@ body, html {
 }
 
 /*-- Final --*/
-
 .final {
    position: relative;
-   top: 22rem;
     width: 100%;
-    height: 60vh;
     overflow: hidden;
 }
 
 .texto-final {
-    position: absolute;
+    position: relative;
     width: 95%;
     height: auto;
     font-size: 30px;
-    color: #103B6D;
     font-weight: 900;
     text-align: center;
     left: 50%;
@@ -535,12 +418,11 @@ body, html {
 }
 
 .perder {
-    position: absolute;
+    position: relative;
     width: 95%;
     height: auto;
     left: 50%;
     transform: translateX(-50%);
-    top: 250px;
 }
 
 .perder-movil {
@@ -548,123 +430,134 @@ body, html {
 }
 
 .texto-final2 {
-    position: absolute;
+    position: relative;
     width: 95%;
     height: auto;
     font-size: 20px;
-    color: #103B6D;
     font-weight: 700;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
     letter-spacing: 1.5%;
     line-height: 30px;
-    top: 290px;
 }
 
 /*-- Mas informacion --*/
 .mas-informacion {
     position: relative;
-    top: 24rem;
     width: 100%;
-    height: 50vh;
+    height: auto;
     overflow: hidden;
 }
 
 .info1 {
-    position: absolute;
-    width: 95%;
-    height: auto;
-    font-size: 30px;
-    color: #103B6D;
+    position: relative;
+    width: 100%;
+    font-size: 40px;
     font-weight: 900;
+    font-style: italic;
     text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 4.8%;
-    line-height: 50px;
+    line-height: 56px;
+    padding: 20px 0;
     text-transform: uppercase;
+    background: rgb(168, 216, 233);
+    color: rgb(9, 21, 37);
 }
 
     
 .mas-informacion-container {
-    top: 7rem;
-    position: absolute;
     display: flex;
     flex-direction: row;
-    left: 50%;
-    transform: translateX(-50%);
     height: auto;
-    align-items: center;
+    justify-content: center;
     gap: 5rem;
-    font-size: large;
 }
 
-.telefono-text {
+.telefono-text, .correo-text, .whatsapp-text {
     text-align: center;
 }
 
-.tel {
-    font-weight: 900;
+.tel, .correo, .whatsapp {
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-.tel1 {
-    text-decoration: underline;
-    cursor: pointer;
+a.tel1, a.tel2, a.correo1, a.whattel {
+    color: #000;
+    font-size: 18px;
 }
 
-.tel2 {
-    text-decoration: underline;
-    cursor: pointer;
+/*-- Documentos --*/
+.doc-title {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    line-height: 56px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background: rgb(168, 216, 233);
+    color: rgb(9, 21, 37);
 }
 
-.correo-text {
+.documentos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin: 2rem 0;
+}
+
+.documento-item {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-.correo {
-    font-weight: 900;
+.download-link {
+    text-decoration: none;
+    color: #000;
+    background-color: #a8d8e9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+}
+
+.download-link:hover {
+    background-color: #7d6dcd;
+    color: #fff;
+}
+
+.ri-download-line {
+    margin-right: 10px;
+}
+
+.documento {
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 20px;
-}
-
-.lol {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.whatsapp-text {        
-    text-align: center;
-}
-
-.whatsapp {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.whattel {
-    text-decoration: underline;
-    cursor: pointer;
+    font-size: 22px;
 }
 
 /*-- Responsive Styles --*/
 @media (max-width: 400px) {
     body, html {
         margin: 0;
-        height: 100%;
+        padding-top: 0px;
+        top: 0px;
+        width: 100%;
+        height: auto;
         font-family: 'Urbanist', sans-serif;
     }
 
     .main {
         width: 100%;
-        height: 100%;
-    }
-
-    .portada {
-        height: 100vh;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .iconos {
@@ -711,145 +604,67 @@ body, html {
     .visita-caracol {
         position: relative;
         width: 100%;
-        top: 5rem;
-        height: 530vh;
+        height: auto;
+        align-self: center;
+        object-fit: cover;
         overflow: hidden;
     }
 
     .visita {
         width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
+        align-self: center;
+        object-fit: cover;
     }
 
     .texto-visita {
         font-size: 16px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .sala-tierra{
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        height: auto;
-    }
-
-    .sala-cielo {
-        width: 90%; 
-        height: auto;
-        top: 37.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .sala-mar {
-        width: 90%;
-        height: auto;
-        top: 68.75rem;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .planetario {
-        width: 90%;
-        height: auto;
-        top: 100rem;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
     }
 
     .texto-visita2 {
-        top: 136.5rem;
         font-size: 12px;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
     }
 
     .texto-visita3 {
-        top: 139.5rem;
         font-size: 16px;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
     }
 
     .sensorama-container {
-        position: absolute;
+        position: relative;
         display: flex;
-        left: 50%;
-        width: 95%;
+        width: 100%;
         height: auto;
-        transform: translateX(-50%);
     }
 
     .sensorama {
-        width: 90%;
+        width: 100%;
         height: auto;
-        top: 142rem;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .sensorama-container-texto {
-        top:  160rem;
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
+            width: 100%;
     }
 
     .texto-sensorama {
-        top: 170rem;
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
     }
 
     .texto-sensorama2 {
-        top:  182rem;
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 100%;
     }
 
     .recorrido {
-        position: absolute;
+        position: relative;
         display: flex;
-        top:  188rem;
-        left: 50%;
-        width: 90%;
-        height: auto;
-        transform: translateX(-50%);
-    }
-
-    .texto-recorrido {
-        position: absolute;
-        top: 194rem;
-        font-size: 20px;
-        color: #103B6D;
-        font-weight: 700;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .disponibilidad-visita {
-        display: none;
-    }
-
-    .disponibilidad-visita-movil {
-        display: block;
-        position: absolute;
-        top:  202rem;
         width: 100%;
         height: auto;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     /*-- ciencia-aire-libre --*/
     .ciencia-aire-libre {
-        top: 10rem;
-        height: 430vh;
+        height: auto;
         overflow: hidden;
     }
 
@@ -860,14 +675,12 @@ body, html {
     }
 
     .texto-ciencia {
-        top: 8rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .texto-ciencia2 {
-        top: 16.5rem;
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
@@ -875,122 +688,81 @@ body, html {
     }
 
     .paseo-bahia-container {
-        position: absolute;
+        position: relative;
         display: flex;
-        left: 50%;
-        width: 95%;
+        width: 100%;
         height: auto;
-        transform: translateX(-50%);
     }
 
     .paseo-bahia {
-        position: absolute;
-        width: 90%;
+        position: relative;
+        width: 100%;
         height: auto;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .titulo-paseo {
-        position: absolute;
-        width: 99%;
+        position: relative;
+        width: 100%;
         height: auto;
-        color: #103B6D;
         font-weight: 900;
         font-size: 33px;
         text-align: center;
-        top: 37rem;
-        left: 50%;
-        transform: translateX(-50%);
         letter-spacing: 1%;
     }
 
     .texto-paseo1 {
-        position: absolute;
-        width: 90%;
+        position: relative;
         height: auto;
-        color: #103B6D;
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 41.5rem;
-        left: 50%;
-        transform: translateX(-50%);
         line-height: 27px;
         letter-spacing: 1%;
     }
 
     .texto-paseo2 {
-        position: absolute;
-        width: 90%;
-        height: auto;
-        color: #103B6D;
+        position: relative;
         font-weight: 700;
         font-size: 16px;
         text-align: center;
-        top: 49.5rem;
-        left: 50%;
-        transform: translateX(-50%);
         word-spacing: 1%;
         line-height: 38px;
     }
 
     .bufadora-container {
-        position: absolute;
+        position: relative;
         display: flex;
-        left: 50%;
-        width: 95%;
+        width: 100%;
         height: auto;
-        transform: translateX(-50%);
     }
 
     .bufadora {
-        position: absolute;
-        width: 90%;
+        width: 100%;
         height: auto;
-        left: 50%;
-        top: 58rem;
-        transform: translateX(-50%);
     }
 
     .titulo-bufadora {
-        position: absolute;
-        width: 99%;
-        top: 75rem;
+        width: 100%;
         height: auto;
-        color: #103B6D;
         font-weight: 900;
         font-size: 33px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
         letter-spacing: 1%;
     }
 
     .texto-bufadora1 {
-        position: absolute;
-        width: 90%;
+        width: 100%;
         height: auto;
-        color: #103B6D;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        top: 81.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        line-height: 27px;
         letter-spacing: 1%;
     }
 
     .texto-bufadora2 {
-        position: absolute;
-        width: 90%;
+        position: relative;
+        width: 100%;
         height: auto;
-        color: #103B6D;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        top: 88rem;
         left: 50%;
         transform: translateX(-50%);
         word-spacing: 1%;
@@ -998,32 +770,29 @@ body, html {
     }
 
     .avistamiento-de-ballenas {
-        position: absolute;
+        position: relative;
         display: flex;
-        top: 97rem;
         left: 50%;
-        width: 95%;
+        width: 100%;
         height: auto;
         transform: translateX(-50%);
     }
 
     .ballenas {
-        position: absolute;
-        width: 90%;
+        position: relative;
+        width: 100%;
         height: auto;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .titulo-ballenas {
-        top: 16rem;
-        position: absolute;
-        width: 99%;
+        position: relative;
+        width: 100%;
         height: auto;
         color: #103B6D;
         font-weight: 900;
         font-size: 33px;
-        text-align: center;
         left: 50%;
         transform: translateX(-50%);
         letter-spacing: 1%;

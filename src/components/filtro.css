@@ -1,0 +1,50 @@
+.filter-container {
+    background-color: #e2e2e2;
+    padding: 20px;
+    padding-top: 1px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.filter-container h2 {
+    border-bottom: 1px solid rgba(45,40,78,.07);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 8px;
+    padding-bottom: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+
+.filter-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 2px;
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    padding: 0 14px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #3bb2de;
+  color: white;
+}
+
+.filter-btn.active {
+  background-color: #3bb2de;
+  color: white;
+}
