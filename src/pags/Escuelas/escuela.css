@@ -16,6 +16,10 @@ body, html {
     overflow-y: hidden;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 /*-- Portada --*/
 .portada {
     position: relative;
@@ -102,7 +106,6 @@ body, html {
     background-color: #a8d8e9;
     color: #113c6e;
     padding: 6px 12px;
-    border-radius: 6px;
     white-space: nowrap;
     font-size: 12px;
     font-weight: 500;
@@ -125,12 +128,10 @@ body, html {
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem; /* Espacio entre elementos */
-    background-color: white; /* Opcional */
+    gap: 2rem;
 }
 
-.visita img {
+.visita {
     max-width: 100%;
     height: auto;
     display: block;
@@ -145,8 +146,14 @@ body, html {
 }
 
 .texto-visita {
+    position: relative;
+    width: 95%;
+    height: auto;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .texto-visita2 {
@@ -155,7 +162,7 @@ body, html {
 }
 
 .texto-visita3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -176,6 +183,10 @@ body, html {
     overflow: hidden;
 }
 
+.temporal {
+    border-radius: 22px;
+}
+
 /*-- Sensorama --*/
 .sensorama-container {
     display: flex;
@@ -189,10 +200,9 @@ body, html {
 .sensorama-container-texto {
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .sensorama {
@@ -209,6 +219,11 @@ body, html {
     font-weight: 500;
     margin: 110px auto;
     text-align: center;
+}
+
+.texto-sensorama2 {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /*-- Recorrido --*/
@@ -237,7 +252,7 @@ body, html {
     width: 95%;
     height: auto;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
@@ -248,10 +263,11 @@ body, html {
     width: 95%;
     height: auto;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 0;
 }
 
 /*-- Paseo Bahía --*/
@@ -278,8 +294,9 @@ body, html {
 }
 
 .titulo-paseo {
-  font-size: 40px;
-  font-weight: 800;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
 }
 
 .texto-paseo1,
@@ -309,14 +326,17 @@ body, html {
 /*-- Bufadora --*/
 .bufadora-container {
     display: flex;
-    gap: 2rem;
+    gap: 5.89rem;
     flex-wrap: wrap;
 }
 
 .bufadora {
     width: 50%; 
     height: auto;
-    
+}
+
+.bufadora-movil {
+    display: none;
 }
 
 .bufadora-texto {
@@ -326,12 +346,13 @@ body, html {
     display: flex;
     flex-direction: column;
     vertical-align: middle;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .titulo-bufadora {
     font-size: 40px;
     font-weight: 800;
+    text-transform: capitalize;
 }
 
 .texto-bufadora1,
@@ -364,6 +385,7 @@ body, html {
 .titulo-ballenas {
     font-size: 40px;
     font-weight: 800;
+    text-transform: capitalize;
 }
 
 .texto-ballenas1,
@@ -375,26 +397,10 @@ body, html {
 
 .sumergete {
     text-align: center;
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 800;
 }
 
-.sumergete-movil {
-    display: none;
-}
-
-.disponibilidad-ciencia {
-    position: absolute;
-    top: 123rem;
-    width: 100%;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.disponibilidad-ciencia-movil {
-    display: none;
-}
 
 /*-- Final --*/
 .final {
@@ -461,7 +467,7 @@ body, html {
     padding: 20px 0;
     text-transform: uppercase;
     background: rgb(168, 216, 233);
-    color: rgb(9, 21, 37);
+    color: #231f40;
 }
 
     
@@ -500,7 +506,7 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     padding: 20px 0;
     text-transform: uppercase;
     background: rgb(168, 216, 233);
-    color: rgb(9, 21, 37);
+    color: #231f40;
 }
 
 .documentos-container {
@@ -519,8 +525,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 
 .download-link {
     text-decoration: none;
-    color: #000;
-    background-color: #a8d8e9;
+    color: #FFF;
+    background-color: #3bb2de;
     padding: 10px 20px;
     border-radius: 5px;
     width: fit-content;
@@ -528,7 +534,7 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 }
 
 .download-link:hover {
-    background-color: #7d6dcd;
+    background-color: #231f40;
     color: #fff;
 }
 
@@ -543,7 +549,7 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 }
 
 /*-- Responsive Styles --*/
-@media (max-width: 400px) {
+@media (min-width: 400px) and (max-width: 768px) {
     body, html {
         margin: 0;
         padding-top: 0px;
@@ -602,16 +608,15 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .visita-caracol {
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
         width: 100%;
         height: auto;
-        align-self: center;
-        object-fit: cover;
         overflow: hidden;
     }
 
     .visita {
-        width: 90%;
+        width: 80%;
         align-self: center;
         object-fit: cover;
     }
@@ -632,8 +637,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .sensorama-container {
-        position: relative;
         display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
     }
@@ -644,7 +649,9 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .sensorama-container-texto {
-            width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .texto-sensorama {
@@ -656,8 +663,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .recorrido {
-        position: relative;
-        display: flex;
         width: 100%;
         height: auto;
     }
@@ -669,15 +674,11 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .ciencia {
-        width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 80%;
     }
 
     .texto-ciencia {
         width: 90%;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .texto-ciencia2 {
@@ -688,7 +689,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .paseo-bahia-container {
-        position: relative;
         display: flex;
         width: 100%;
         height: auto;
@@ -706,8 +706,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         height: auto;
         font-weight: 900;
         font-size: 33px;
-        text-align: center;
         letter-spacing: 1%;
+        text-transform:capitalize
     }
 
     .texto-paseo1 {
@@ -715,7 +715,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         height: auto;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
         line-height: 27px;
         letter-spacing: 1%;
     }
@@ -724,29 +723,45 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         position: relative;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
         word-spacing: 1%;
         line-height: 38px;
     }
 
     .bufadora-container {
-        position: relative;
         display: flex;
         width: 100%;
         height: auto;
     }
 
-    .bufadora {
+    .bufadora-movil {
+        display: block;
+        position: relative;
         width: 100%;
         height: auto;
     }
 
+    .bufadora {
+        display: none;
+    }
+
+    .bufadora-texto {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        gap: .5rem;
+    }
+
     .titulo-bufadora {
+        position: relative;
         width: 100%;
         height: auto;
         font-weight: 900;
         font-size: 33px;
         letter-spacing: 1%;
+        text-transform:capitalize
     }
 
     .texto-bufadora1 {
@@ -763,8 +778,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         height: auto;
         font-weight: 700;
         font-size: 16px;
-        left: 50%;
-        transform: translateX(-50%);
         word-spacing: 1%;
         line-height: 38px;
     }
@@ -772,153 +785,59 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     .avistamiento-de-ballenas {
         position: relative;
         display: flex;
-        left: 50%;
-        width: 100%;
         height: auto;
-        transform: translateX(-50%);
     }
 
     .ballenas {
         position: relative;
         width: 100%;
         height: auto;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
     .titulo-ballenas {
         position: relative;
-        width: 100%;
-        height: auto;
-        color: #103B6D;
         font-weight: 900;
         font-size: 33px;
-        left: 50%;
-        transform: translateX(-50%);
         letter-spacing: 1%;
     }
     
     .texto-ballenas1 {
-        position: absolute;
-        width: 90%;
+        position: relative;
         height: auto;
-        top: 23rem;
-        color: #103B6D;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
         line-height: 27px;
         letter-spacing: 1%;
     }
 
     .texto-ballenas2 {
-        position: absolute;
-        width: 90%;
-        height: auto;
-        top: 30rem;
-        color: #103B6D;
+        position: relative;
         font-weight: 700;
         font-size: 16px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
         word-spacing: 1%;
         line-height: 38px;
     }
 
     .sumergete {
-        display: none;
-    }
-
-    .sumergete-movil {
-        position: absolute;
-        display: flex;
-        top: 135rem;
-        left: 50%;
-        width: 90%;
-        height: auto;
-        transform: translateX(-50%);
-    }
-
-    .disponibilidad-ciencia {
-        display: none;
-    }
-
-    .disponibilidad-ciencia-movil {
-        display: block;
-        position: absolute;
-        top: 162rem;
+        position: relative;
         width: 100%;
         height: auto;
-        left: 50%;
-        transform: translateX(-50%);
+        font-size: 40px;
+        font-weight: 800;
     }
-
-    .final {
-        top: 10rem;
-        height: 68vh;
-        overflow: hidden;
-    }
-
-    .texto-final {
-        position: absolute;
-        height: auto;
-        font-size: 24px;
-        color: #103B6D;
-        font-weight: 900;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        letter-spacing: 4.8%;
-        line-height: 40px;
-    }
-
-    .perder {
-        display: none;
-    }
-
-    .perder-movil {
-        position: absolute;
-        display: flex;
-        width: 90%;
-        height: auto;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 17.75rem;
-    }
-
-    .texto-final2 {
-        position: absolute;
-        width: 90%;
-        height: auto;
-        font-size: 16px;
-        color: #103B6D;
-        font-weight: 700;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-        letter-spacing: 1.5%;
-        line-height: 30px;
-        top: 24rem;
-    }
-
-
+    
     /* -- Mas informacion -- */
 
     .mas-informacion {
-        top: 11rem;
-        height: 85vh;
+        height: auto;
         overflow: hidden;
     }
 
     .info1 {
-        position: absolute;
-        width: 98%;
+        position: relative;
+        width: 100%;
         height: auto;
         font-size: 24px;
-        color: #103B6D;
         font-weight: 900;
         text-align: center;
         left: 50%;
@@ -928,13 +847,11 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     }
 
     .mas-informacion-container {
-        top: 7rem;
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        font-size: medium;
     }
 
     .telefono-text {
@@ -985,4 +902,20 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         cursor: pointer;
     }
 
+    /*-- Documentos --*/
+
+    .documentos {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .documentos-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 }
