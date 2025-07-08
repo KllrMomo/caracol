@@ -19,20 +19,23 @@ function Escuelas () {
         <div className="iconos-container">
           <div className="iconos">
             <div className="icon-wrapper">
-              <img src="images/Boletos.png" alt="boletos" className="boleto" />
-              <span className="tooltip">Boletos</span>
+              <a href="https://www.caracolbc.org/Visitanos#section1" target="_blank" rel="noopener noreferrer"><img src="images/Boletos.png" alt="boletos" className="boleto" />
+              <span className="tooltip">Boletos</span></a>
             </div>
+
             <div className="icon-wrapper">
-              <img src="images/Cielo.png" alt="cielo" className="cielo" />
-              <span className="tooltip">Sala del <br />Cielo</span>
+              <a href="https://www.caracolbc.org/salas#section1" target="_blank" rel="noopener noreferrer"><img src="images/Cielo.png" alt="cielo" className="cielo" />
+              <span className="tooltip">Sala del <br />Cielo</span></a>
             </div>
+
             <div className="icon-wrapper">
-              <img src="images/Tierra.png" alt="tierra" className="tierra" />
-              <span className="tooltip">Sala de la <br />Tierra</span>
+              <a href="https://www.caracolbc.org/salas#section2" target="_blank" rel="noopener noreferrer"><img src="images/Tierra.png" alt="tierra" className="tierra" />
+              <span className="tooltip">Sala de la <br />Tierra</span></a>
             </div>
+
             <div className="icon-wrapper">
-              <img src="images/Mar.png" alt="mar" className="mar" />
-              <span className="tooltip">Sala del <br />Mar</span>
+              <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer"><img src="images/Mar.png" alt="mar" className="mar" />
+              <span className="tooltip">Sala del <br />Mar</span></a>
             </div>
           </div>
         </div>
@@ -48,18 +51,27 @@ function Escuelas () {
           </div>
         </section>
 
-        <Filtro className="filtro" />
+        {/*<Filtro className="filtro" />*/}
 
-        <section className="visita-caracol">
+        <section id="section1" className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
           <p className="texto-visita">Descubre las maravillas de la península de Baja California a través de nuestras salas de exhibición. </p>
           
           <div className="salas-container">
-            <img src="/images/Sala-Tierra.png" alt="Sala de la Tierra" className="sala-tierra"/>
-            <img src="/images/Sala-Cielo.png" alt="Sala del Cielo" className="sala-cielo"/>
-            <img src="/images/Sala-Mar.png" alt="Sala del Mar" className="sala-mar"/>
-            <img src="/images/Planetario.png" alt="Planetario" className="planetario"/>
-            <img src="/images/Dinosaurios.png" alt="Dinosaurios" className="dinosaurios"/>
+             <a href="https://www.caracolbc.org/salas#section2" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Tierra.png" alt="Sala de la Tierra" className="sala-tierra"/></a>
+
+            <a href="https://www.caracolbc.org/salas#section1" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Cielo.png" alt="Sala del Cielo" className="sala-cielo"/></a>
+
+            <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Mar.png" alt="Sala del Mar" className="sala-mar"/></a>
+
+            <a href="https://www.caracolbc.org/salas#sectionplanetario" target="_blank" rel="noopener noreferrer"><img src="/images/Planetario.png" alt="Planetario" className="planetario"/></a>
+
+            <a href="https://www.caracolbc.org/salas#section5" target="_blank" rel="noopener noreferrer"><img src="/images/Dinosaurios.png" alt="Dinosaurios" className="dinosaurios"/></a>
+
+            <p className="texto-sala">Sala Temporal</p>
+
+            <a href="https://www.caracolbc.org/salas#section4" target="_blank" rel="noopener noreferrer"><img src="/images/temporal.jpg" alt="Sala Temporal" className="temporal"/></a>
+
           </div>
           <p className="texto-visita2">* Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
           <p className="texto-visita3">Y exploren con sensorama</p>
@@ -69,24 +81,24 @@ function Escuelas () {
               <p className="texto-sensorama">Explora seres vivos, elementos de la naturaleza y objetos que tenemos en el museo, utilizando solamente tu tacto. <br />
               ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? Descúbrelo en este divertido taller. </p>
 
-              <p className="texto-sensorama2">Incluido en tu visita para escuelas con más de 180 alumnos</p>
+              <p className="texto-sensorama2">*Incluido en tu visita para escuelas con más de 180 alumnos</p>
             </div>
           </div>
 
-          <p className="recorrido">¡PROGRAMA TU RECORRIDO!</p>
+          <p id="section2" className="recorrido">¡PROGRAMA TU RECORRIDO!</p>
         </section>
 
-        <section className="ciencia-aire-libre">
+        <section  className="ciencia-aire-libre">
           <img src="/images/CIENCIA-LIBRE.png" alt="Ciencia al Aire Libre" className="ciencia"/>
 
-          <p className="texto-ciencia">Descubre las maravillas de nuestros ecosistemas y aprende sobre su flora y fauna en los <br />recorridos interpretativos que tenemos para tus alumnos.</p>
+          <p className="texto-ciencia">Descubre las maravillas de nuestros ecosistemas y aprende sobre su flora y fauna en los recorridos interpretativos que tenemos para tus alumnos.</p>
           <p className="texto-ciencia2">*Mínimo 30 alumnos</p>
 
           <div className="paseo-bahia-container">
             <img src="/images/Bahia.jpg" alt="Paseo por la Bahía" className="paseo-bahia" />
             
             <div className="paseo-texto">
-              <p className="titulo-paseo">PASEO EN LA BAHÍA</p>
+              <p className="titulo-paseo">Paseo en la bahía</p>
               <p className="texto-paseo1">
                 Embárcate en una emocionante experiencia en barco <br /> mientras
                 observas y conoces las maravillas del mar.
@@ -100,27 +112,28 @@ function Escuelas () {
 
 
           <div  className="bufadora-container">
-            <img src="/images/Bufadora.jpg" alt="Bufadora" className="bufadora"/>
+            <img src="images/Bufadora.jpg" alt="Bufadora" className="bufadora-movil"/>
             
             <div className="bufadora-texto">
-              <p className="titulo-bufadora">LA BUFADORA DESDE <br /> EL MAR</p>
+              <p className="titulo-bufadora">La bufadora desde <br /> el mar</p>
               <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras navegas y <br />aprendes  sobre las criaturas que habitan nuestras costas.</p>
               <p className="texto-bufadora2">
                 <span className="duracion-label">DURACIÓN</span> 
                 <i className="ri-time-line"></i> 4 horas aprox.
               </p>
             </div>
+            <img src="/images/Bufadora.jpg" alt="Bufadora" className="bufadora"/>
           </div>
 
           <div className="avistamiento-de-ballenas">
             <img src="/images/Ballenas.jpg" alt="Avistamiento de Ballenas" className="ballenas"/>
             
             <div className="ballenas-texto"> 
-              <p className="titulo-ballenas">AVISTAMIENTO DE <br />BALLENAS</p>
+              <p className="titulo-ballenas"> Avistamiento De <br /> Ballenas</p>
               <p className="texto-ballenas1">Conoce la flora y fauna de la región, mientras aprendes sobre <br /> los ecosistemas que nos rodean.</p>
               <p className="texto-ballenas2">
                 <span className="duracion-label">DURACIÓN</span> 
-                <i className="ri-time-line"></i> 1.5 horas aprox.
+                <i className="ri-time-line"></i> 4 horas aprox.
               </p>
               <p className="texto-ballenas2">
                 <i class="ri-search-line"></i> Únicamente en temporada de migración
@@ -161,12 +174,20 @@ function Escuelas () {
           </div>
         </section>
 
-        <section className="documentos">
+        <section id="section3" className="documentos">
             <h3 className="doc-title">Documentos</h3>
           <div className="documentos-container">
               <div className="documento-item">
                 <p className="documento">Catalogo Oficial 2025</p>
                 <a href={Catalogoparaescuelas2025} target="_blank" className="download-link" rel="noopener noreferrer">
+                    <i className="ri-download-line"></i>
+                    Descargar
+                  </a>
+              </div>
+
+              <div className="documento-item">
+                <p className="documento">Lineamientos de visita</p>
+                <a href="https://docs.google.com/document/d/1d8DB42UijXPfTSBcnfxs3xEnxCoqRkVDFJmj9UXXVl8/edit?tab=t.0" target="_blank" className="download-link" rel="noopener noreferrer">
                     <i className="ri-download-line"></i>
                     Descargar
                   </a>

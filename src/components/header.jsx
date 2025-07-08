@@ -15,7 +15,14 @@ function Header() {
             <li className="nav-item"><a href="/visita">Visítanos</a></li>
             <li className="nav-item"><a href="/contacto">Descubre</a></li>
             <li className="nav-item"><a href="/donativos">Dona</a></li>
-            <li className="nav-item"><a href="/escuelas" className="active">Escuelas</a></li>
+            <li className="nav-item dropdown">
+              <a href="/escuelas" className="active">Escuelas</a>
+              <ul className="dropdown-menu">
+                <li className="dropdown-item"><a href="#section1">Visita Caracol</a></li>
+                <li className="dropdown-item"><a href="#section2">Ciencia al Aire Libre</a></li>
+                <li className="dropdown-item"><a href="#section3">Docuementos</a></li>
+              </ul>
+            </li>
 
             <div className="container-all">
             <div className="social-icons">
