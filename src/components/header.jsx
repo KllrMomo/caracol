@@ -20,7 +20,10 @@ function Header() {
               <ul className="dropdown-menu">
                 <li className="dropdown-item"><a href="#section1">Visita Caracol</a></li>
                 <li className="dropdown-item"><a href="#section2">Ciencia al Aire Libre</a></li>
-                <li className="dropdown-item"><a href="#section3">Docuementos</a></li>
+                <li className="dropdown-item"><a href="#section3">Contactos</a></li>
+                <li className="dropdown-item"><a href="#section4">Agenda tu cita</a></li>
+                <li className="dropdown-item"><a href="#section5">Docuementos</a></li>
+                
               </ul>
             </li>
 

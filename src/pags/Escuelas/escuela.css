@@ -20,6 +20,10 @@ section {
   scroll-margin-top: 80px;
 }
 
+id {
+    scroll-margin-top: 80px;
+}
+
 /*-- Portada --*/
 .portada {
     position: relative;
@@ -125,17 +129,14 @@ section {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    overflow: hidden;
 }
 
 .visita {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
 }
 
 .texto-visita,
@@ -162,6 +163,7 @@ section {
 }
 
 .texto-visita3 {
+    margin-top: 2rem;
     font-size: 20px;
     font-weight: 700;
 }
@@ -173,7 +175,74 @@ section {
     flex-wrap: wrap;
     width: 97%;
     margin: .5rem;
+    margin-top: 2rem;
     gap: 3rem;
+}
+
+.salas-container2 img {
+    width: 293.6px;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.salas-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: .2rem;
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-container img {
+  width: 242px;
+  height: auto;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.hover-text {
+  position: absolute;
+  bottom: 0;
+  background: #9fd9ead5;
+  color: #103b6d;
+  width: 93.6%;
+  text-align: center;
+  opacity: 0;
+  padding: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hover-container:hover .hover-text {
+  opacity: 1;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.texto-sala2 {
+    margin-top: 4rem;
+    padding: 10px;
+    background-color: rgba(80, 158, 219, 0.3);
+    color: #113c6e;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 580;
+    font-style: italic;
+    word-break:break-all;
+    height: fit-content;
+    width: fit-content;
+    text-transform: uppercase;
 }
 
 .salas-container div {
@@ -183,6 +252,20 @@ section {
     overflow: hidden;
 }
 
+.texto-sala {
+    margin-top: 4rem;
+    padding: 10px;
+    background-color: rgba(80, 158, 219, 0.3);
+    color: #113c6e;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 580;
+    font-style: italic;
+    word-break:break-all;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
 .temporal {
     border-radius: 22px;
 }
@@ -190,35 +273,32 @@ section {
 /*-- Sensorama --*/
 .sensorama-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    gap: 2rem;
     flex-wrap: wrap;
-    width: 97%;
-    gap: 4rem;
 }
 
-.sensorama-container-texto {
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 2rem;
+.sensorama-texto {
+    margin-top: 8rem;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    gap: 1rem;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .sensorama {
-    flex: 1 1 40%;
-    max-width: 25%;
-    border-radius: 22px;
+    width: 50%; 
+    height: auto;
 }
 
 .texto-sensorama,
 .texto-sensorama2 {
-    flex: 1 1 45%;
-    max-width: 90%;
     font-size: 18px;
+    line-height: 22px;
     font-weight: 500;
-    margin: 110px auto;
-    text-align: center;
 }
 
 .texto-sensorama2 {
@@ -245,6 +325,7 @@ section {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 3rem;
 }
 
 .texto-ciencia {
@@ -275,7 +356,7 @@ section {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .paseo-bahia {
@@ -401,53 +482,6 @@ section {
     font-weight: 800;
 }
 
-
-/*-- Final --*/
-.final {
-   position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.texto-final {
-    position: relative;
-    width: 95%;
-    height: auto;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 4.8%;
-    line-height: 50px;
-    text-transform: uppercase;
-}
-
-.perder {
-    position: relative;
-    width: 95%;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.perder-movil {
-    display: none;
-}
-
-.texto-final2 {
-    position: relative;
-    width: 95%;
-    height: auto;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: 1.5%;
-    line-height: 30px;
-}
-
 /*-- Mas informacion --*/
 .mas-informacion {
     position: relative;
@@ -548,6 +582,35 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     font-size: 22px;
 }
 
+.download-link2 {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #3bb2de;
+    font-size: large;
+    padding: 20px 20px;
+    margin-top: 5rem;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+}
+
+.download-link2:hover {
+    background-color: #231f40;
+    color: #fff;
+}
+
+.documento-item2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.calendario-contianer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /*-- Responsive Styles --*/
 @media (min-width: 400px) and (max-width: 768px) {
     body, html {
@@ -638,7 +701,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 
     .sensorama-container {
         display: flex;
-        flex-direction: column;
         width: 100%;
         height: auto;
     }
@@ -648,10 +710,13 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         height: auto;
     }
 
-    .sensorama-container-texto {
+    .sensorama-texto {
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
+        vertical-align: middle;
+        margin: 0;
     }
 
     .texto-sensorama {

@@ -22,6 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 2rem;
 }
 
 .title {
@@ -76,6 +77,31 @@
 }
 
 .footer-explora-links a:hover {
+    color: #2da2d8;
+}
+
+/* Enlaces */
+.footer-enlaces {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: start;
+    padding: 2rem;
+}
+
+.footer-enlaces-links li {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-enlaces-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-enlaces-links a:hover {
     color: #2da2d8;
 }
 
