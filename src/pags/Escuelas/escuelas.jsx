@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import {Container} from "@mui/material";
 import Header from "../../components/header.jsx";
 import Footer from "../../components/footer.jsx";
+import CalendarForm from "../../components/calendar.jsx"
 import Filtro from "../../components/filtro.jsx";
 import Catalogoparaescuelas2025 from "../../docs/Catalogoparaescuelas2025.pdf";
 import './escuela.css';
@@ -42,46 +43,81 @@ function Escuelas () {
 
         
         <section className="portada">
-          <img src="/images/Escuela.png" alt="Imagen Escuelas" className="imagen-portada"/>
+          <img src="/images/Escuela.jpg" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
             <div className="banner-texto">
+              {/*<h1 className="banner-texto1"> ¡DESCUBRAMOS JUNTOS CARACOL!</h1>*/}
               <h1 className="banner-texto1">¡Trae a tus estudiantes a <br /> vivir la experiencia <br /> Caracol!</h1>
-              <p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>
+              <p className="banner-texto2">Conoce todo lo que tenemos disponible para tu grupo escolar.</p>
+              {/*<p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>*/}
             </div>
           </div>
         </section>
 
-        {/*<Filtro className="filtro" />*/}
-
         <section id="section1" className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
+
           <p className="texto-visita">Descubre las maravillas de la península de Baja California a través de nuestras salas de exhibición. </p>
           
-          <div className="salas-container">
-             <a href="https://www.caracolbc.org/salas#section2" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Tierra.png" alt="Sala de la Tierra" className="sala-tierra"/></a>
+          <div className="salas-container2">
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section2" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Tierra.jpg" alt="Sala de la Tierra" className="sala-tierra" />
+                <span className="hover-text">Sala de la Tierra</span>
+              </a>
+            </li>
 
-            <a href="https://www.caracolbc.org/salas#section1" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Cielo.png" alt="Sala del Cielo" className="sala-cielo"/></a>
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section1" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Cielo.jpg" alt="Sala del Cielo" className="sala-cielo" />
+                <span className="hover-text">Sala del Cielo</span>
+              </a>
+            </li>
 
-            <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer"><img src="/images/Sala-Mar.png" alt="Sala del Mar" className="sala-mar"/></a>
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Mar.jpg" alt="Sala del Mar" className="sala-mar" />
+                <span className="hover-text">Proyecto Sala del Mar</span>
+              </a>
+            </li>
 
-            <a href="https://www.caracolbc.org/salas#sectionplanetario" target="_blank" rel="noopener noreferrer"><img src="/images/Planetario.png" alt="Planetario" className="planetario"/></a>
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#sectionplanetario" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Planetario.jpg" alt="Planetario" className="planetario" />
+                <span className="hover-text">Planetario</span>
+              </a>
+            </li>
 
-            <a href="https://www.caracolbc.org/salas#section5" target="_blank" rel="noopener noreferrer"><img src="/images/Dinosaurios.png" alt="Dinosaurios" className="dinosaurios"/></a>
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section5" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Dinosaurios.jpg" alt="Dinosaurios" className="dinosaurios" />
+                <span className="hover-text">Dinosaurios</span>
+              </a>
+            </li>
 
-            <p className="texto-sala">Sala Temporal</p>
-
-            <a href="https://www.caracolbc.org/salas#section4" target="_blank" rel="noopener noreferrer"><img src="/images/temporal.jpg" alt="Sala Temporal" className="temporal"/></a>
-
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section4" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/temporal.jpg" alt="Sala Temporal" className="temporal2" />
+                <span className="hover-text">Sala Temporal: Aleta Azul, el Atún del Pacífico</span>
+              </a>
+            </li>
           </div>
+
           <p className="texto-visita2">* Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
           <p className="texto-visita3">Y exploren con sensorama</p>
-          <div className="sensorama-container">
-            <img src="/images/Sensorama.png" alt="Sensorama" className="sensorama"/>
-            <div className="texto-sensorama-container">
-              <p className="texto-sensorama">Explora seres vivos, elementos de la naturaleza y objetos que tenemos en el museo, utilizando solamente tu tacto. <br />
-              ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? Descúbrelo en este divertido taller. </p>
 
-              <p className="texto-sensorama2">*Incluido en tu visita para escuelas con más de 180 alumnos</p>
+          <div className="sensorama-container">
+            <img src="/images/sensorama.png" alt="Sensorama" className="sensorama" />
+
+            <div className="sensorama-texto">
+              <p className="texto-sensorama">
+                Explora seres vivos, elementos de la naturaleza y objetos que tenemos  en el museo,<br /> utilizando solamente tu tacto.  <br />
+                ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? <br /> <br /> Descúbrelo en este divertido taller.
+              </p>
+              <p className="texto-sensorama2">
+                <i class="ri-search-line"></i> *
+                Incluido en tu visita para escuelas con más de 180 alumnos
+              </p>
             </div>
           </div>
 
@@ -109,7 +145,6 @@ function Escuelas () {
               </p>
             </div>
           </div>
-
 
           <div  className="bufadora-container">
             <img src="images/Bufadora.jpg" alt="Bufadora" className="bufadora-movil"/>
@@ -144,18 +179,7 @@ function Escuelas () {
           <p className="sumergete">Sumérgete en esta experiencia única y conecta con la naturaleza</p>
         </section>
 
-        {/*<section className="final">
-          <p className="texto-final">Todas nuestras exhibiciones/actividades están disponibles para los niveles de preescolar hasta universidad.</p>
-
-          <img src="images/perder.png" alt="Nadie se tiene que perder de la diversión"  className="perder"/>
-
-          <img src="images/Perder-movil.png" alt="Nadie se tiene que perder de la diversión"  className="perder-movil"/>
-
-          <p className="texto-final2">(restricciones aplican)</p>
-
-        </section>*/}
-
-        <section className="mas-informacion">
+        <section id="section3" className="mas-informacion">
           <p className="info1">Para más información no dudes en contactarnos</p>
           <div className="mas-informacion-container">
             <div className="telefono-text">
@@ -169,24 +193,34 @@ function Escuelas () {
             </div>
             <div className="whatsapp-text">
               <p className="whatsapp">WhatsApp</p>
-              <p><a className="whattel" href="https://wa.me/526464130544"> (646) 413-0544</a></p>
+              <p><a className="whattel" href="https://wa.me/526464130544" target="_blank" rel="noopener noreferrer"> (646) 413-0544</a></p>
             </div>
           </div>
         </section>
 
-        <section id="section3" className="documentos">
+        <section id="section4" className="calendario">
+          <p className="info1">Agenda tu Cita</p>
+          <CalendarForm/>
+        </section>
+
+        <div className="documento-item2">
+            <a href={Catalogoparaescuelas2025} target="_blank" className="download-link2" rel="noopener noreferrer">
+              <i className="ri-download-line"></i>
+              Descarga el Catalogo Oficial 2025
+            </a>
+          </div>
+        <section id="section5" className="documentos">
             <h3 className="doc-title">Documentos</h3>
           <div className="documentos-container">
               <div className="documento-item">
-                <p className="documento">Catalogo Oficial 2025</p>
-                <a href={Catalogoparaescuelas2025} target="_blank" className="download-link" rel="noopener noreferrer">
+                <p className="documento">Lineamientos de visita</p>
+                <a href="https://docs.google.com/document/d/1d8DB42UijXPfTSBcnfxs3xEnxCoqRkVDFJmj9UXXVl8/edit?tab=t.0" target="_blank" className="download-link" rel="noopener noreferrer">
                     <i className="ri-download-line"></i>
                     Descargar
                   </a>
               </div>
-
               <div className="documento-item">
-                <p className="documento">Lineamientos de visita</p>
+                <p className="documento">Carta de deslinde de responsabilidad</p>
                 <a href="https://docs.google.com/document/d/1d8DB42UijXPfTSBcnfxs3xEnxCoqRkVDFJmj9UXXVl8/edit?tab=t.0" target="_blank" className="download-link" rel="noopener noreferrer">
                     <i className="ri-download-line"></i>
                     Descargar

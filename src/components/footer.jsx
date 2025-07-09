@@ -52,12 +52,32 @@ function Footer() {
                             </li>
                         </div>
                     </div>
+                    <div className="footer-enlaces">
+                        <h5 className="title">Enlaces útiles</h5>
+                        <div className="footer-enlaces-links">
+                            <li className="enlaces-item">
+                                <a href="#">
+                                    <i className="ri-arrow-right-double-fill"></i>Contáctanos
+                                </a>
+                            </li>
+                            <li className="enlaces-item">
+                                <a href="#">
+                                    <i className="ri-arrow-right-double-fill"></i>Recursos didácticos
+                                </a>
+                            </li>
+                            <li className="enlaces-item">
+                                <a href="#">
+                                    <i className="ri-arrow-right-double-fill"></i>Donaciones
+                                </a>
+                            </li>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div className="footer-content-bottom">
+            {/*<div className="footer-content-bottom">
                 <p>Caracol - Museo de Ciencias V1.02 Derechos reservados - 2021-</p>
-            </div>
+            </div>*/}
 
             <div className="footer-shapes">
                 <img src="images/shape.png" alt="puntitos"  className="footer-shape"/>
