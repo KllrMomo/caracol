@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import Horario from "./horario.jsx";
+import Horario from "../Horario/horario.jsx";
 
 function Header() {
   return (
