@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
 import {Container} from "@mui/material";
-import Header from "../../components/header.jsx";
-import Footer from "../../components/footer.jsx";
-import CalendarForm from "../../components/calendar.jsx"
-import Filtro from "../../components/filtro.jsx";
+import Header from "../../components/Header/header.jsx";
+import Footer from "../../components/Footer/footer.jsx";
+import CalendarForm from "../../components/Calendar/calendar.jsx"
 import Catalogoparaescuelas2025 from "../../docs/Catalogoparaescuelas2025.pdf";
 import './escuela.css';
 
@@ -46,14 +45,12 @@ function Escuelas () {
           <img src="/images/Escuela.jpg" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
             <div className="banner-texto">
-              {/*<h1 className="banner-texto1"> ¡DESCUBRAMOS JUNTOS CARACOL!</h1>*/}
               <h1 className="banner-texto1">¡Trae a tus estudiantes a <br /> vivir la experiencia <br /> Caracol!</h1>
               <p className="banner-texto2">Conoce todo lo que tenemos disponible para tu grupo escolar.</p>
-              {/*<p className="banner-texto2">Martes a Domingo <br /> 9:00 am a 4:00 pm</p>*/}
             </div>
           </div>
         </section>
-
+        
         <section id="section1" className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
 
@@ -103,7 +100,7 @@ function Escuelas () {
             </li>
           </div>
 
-          <p className="texto-visita2">* Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
+          <p className="texto-visita2">*Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
           <p className="texto-visita3">Y exploren con sensorama</p>
 
           <div className="sensorama-container">
@@ -115,16 +112,15 @@ function Escuelas () {
                 ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? <br /> <br /> Descúbrelo en este divertido taller.
               </p>
               <p className="texto-sensorama2">
-                <i class="ri-search-line"></i> *
-                Incluido en tu visita para escuelas con más de 180 alumnos
+                <i class="ri-search-line"></i> Incluido en tu visita para escuelas con más de 180 alumnos
               </p>
             </div>
           </div>
 
-          <p id="section2" className="recorrido">¡PROGRAMA TU RECORRIDO!</p>
+          <p className="recorrido">¡PROGRAMA TU RECORRIDO!</p>
         </section>
 
-        <section  className="ciencia-aire-libre">
+        <section id="section2" className="ciencia-aire-libre">
           <img src="/images/CIENCIA-LIBRE.png" alt="Ciencia al Aire Libre" className="ciencia"/>
 
           <p className="texto-ciencia">Descubre las maravillas de nuestros ecosistemas y aprende sobre su flora y fauna en los recorridos interpretativos que tenemos para tus alumnos.</p>
@@ -180,7 +176,8 @@ function Escuelas () {
         </section>
 
         <section id="section3" className="mas-informacion">
-          <p className="info1">Para más información no dudes en contactarnos</p>
+          {/*<p className="info1">Para más información no dudes en contactarnos</p>*/}
+          <p className="info1">Contactos</p>
           <div className="mas-informacion-container">
             <div className="telefono-text">
               <p className="tel">Teléfono</p>
@@ -208,7 +205,8 @@ function Escuelas () {
               <i className="ri-download-line"></i>
               Descarga el Catalogo Oficial 2025
             </a>
-          </div>
+        </div>
+
         <section id="section5" className="documentos">
             <h3 className="doc-title">Documentos</h3>
           <div className="documentos-container">

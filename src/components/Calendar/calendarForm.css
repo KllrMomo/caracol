@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Urbanist' sans-serif;
+    align-items: center;
+}
+
+.calendar {
+    background-color:rgba(230, 229, 224, 0.3);
+    padding: 1rem;
+    width: 650px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #231f40;
+}
+
+.calendar h3 {
+    text-align: center;
+    color: #231f40;
+    font-size: x-large;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 400px;
+    height: 300px;
+    margin-left: 150px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: #FFF;
+    background-color: #3bb2de;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+    border: none;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #413c6b;
+    color: #fff;
+}
+
+.rbc-month-view {
+    background-color: rgba(197, 219, 240, 0.3) !important;
+    color: rgb(23, 72, 118);
+    width: 650px;
+}
+
+.rbc-header {
+    background-color:rgba(122, 163, 201, 0.585);
+    color: rgb(14, 79, 140);
+    border:1px solid #231f40;
+}
+
+.rbc-day-bg {
+    border:1px solid #231f40;
+}
+
+.rbc-day-bg:hover {
+  background-color: rgba(150, 184, 219, .5) !important;
+  cursor: pointer;
+}
+
+.rbc-today {
+  background-color: rgba(96, 131, 197, 0.4) !important;
+}
+
+.rbc-selected-cell {
+  background-color: rgba(23, 39, 114, 0.4) !important;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Urbanist' sans-serif;
+    align-items: center;
+    margin: 0;
+}
+.calendar {
+    background-color: rgba(195, 230, 243, 0.3);
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #231f40;
+    align-self: center;
+}
+
+.form {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    gap: 0.5rem;
+}
+
+}

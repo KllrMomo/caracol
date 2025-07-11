@@ -586,7 +586,7 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     text-decoration: none;
     color: #FFF;
     background-color: #3bb2de;
-    font-size: large;
+    font-size: x-large;
     padding: 20px 20px;
     margin-top: 5rem;
     border-radius: 5px;
@@ -609,6 +609,9 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+section {
 }
 
 /*-- Responsive Styles --*/
@@ -982,5 +985,17 @@ a.tel1, a.tel2, a.correo1, a.whattel {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+    }
+
+    .download-link2 {
+        text-decoration: none;
+        color: #FFF;
+        background-color: #3bb2de;
+        font-size: large;
+        padding: 20px 20px;
+        margin-top: 5rem;
+        border-radius: 5px;
+        width: fit-content;
+        align-self: center;
     }
 }
