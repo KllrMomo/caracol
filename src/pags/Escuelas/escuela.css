@@ -133,10 +133,10 @@ id {
 }
 
 .visita {
+    margin-top: 3rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 3rem;
 }
 
 .texto-visita,
@@ -526,6 +526,7 @@ li {
 a.tel1, a.tel2, a.correo1, a.whattel {
     color: #000;
     font-size: 18px;
+    font-weight: 400;
 }
 
 /*-- Documentos --*/
@@ -560,6 +561,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 .download-link {
     text-decoration: none;
     color: #FFF;
+    font-weight: 400;
+    font-size: 16px;
     background-color: #3bb2de;
     padding: 10px 20px;
     border-radius: 5px;
@@ -586,7 +589,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     text-decoration: none;
     color: #FFF;
     background-color: #3bb2de;
-    font-size: x-large;
+    font-size: 24px;
+    font-weight: 400;
     padding: 20px 20px;
     margin-top: 5rem;
     border-radius: 5px;
@@ -609,9 +613,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-section {
 }
 
 /*-- Responsive Styles --*/
