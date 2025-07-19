@@ -53,8 +53,8 @@ id {
 
 .banner-texto {
     display: block;
-    background: #01122573;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.305);
+    background: rgba(31, 75, 134, 0.45);
+    box-shadow: 10px 0px 10px 10px rgba(0, 0, 0, 0.45), -10px 0 10px 0px rgba(0, 0, 0, 0.45);
     padding: 25px 50px;
     text-align: center;
     font-weight: 500;
@@ -139,11 +139,14 @@ id {
     transform: translateX(-50%);
 }
 
-.texto-visita,
-.texto-visita2,
-.texto-visita3 {
-    width: 95%;
-    text-align: center;
+.bold-letter {
+    font-weight: 800;
+}
+
+.linea-azul {
+    position: inherit;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .texto-visita {
@@ -155,73 +158,145 @@ id {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 6px;
 }
 
 .texto-visita2 {
     font-size: 14px;
-    font-weight: 500;
-}
-
-.texto-visita3 {
-    margin-top: 2rem;
-    font-size: 20px;
     font-weight: 700;
+    font-style: italic;
+    background-color: #3BB2DE;
+    color: #FFF;
+    align-items: center;
+    width: fit-content;
+    padding-top: 6px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 6px;
+
+    margin-left: 499px;
+    margin-right: 499px;
 }
 
 /*-- Salas --*/
-.salas-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 97%;
-    margin: .5rem;
-    margin-top: 2rem;
-    gap: 3rem;
-}
-
-.salas-container2 img {
-    width: 293.6px;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 1/1;
-}
-
 .salas-container2 {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 45px;
+    row-gap: 44px;
+    padding-top: 32px;
+    padding-left: 283px;
+    padding-right: 283px;
+    padding-bottom: 50px;
     justify-content: center;
-    margin-top: 2rem;
-    gap: .2rem;
+    list-style: none;
+}
+
+.item {
+  width: 270px;
+  height: 275px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.005);
 }
 
 .hover-container {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .hover-container img {
-  width: 242px;
-  height: auto;
+  width: 270px;
+  height: 175px;
+  object-fit: fill;
   display: block;
-  transition: 0.3s ease-in-out;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-.hover-text {
-  position: absolute;
-  bottom: 0;
-  background: #9fd9ead5;
-  color: #103b6d;
-  width: 93.6%;
-  text-align: center;
-  opacity: 0;
-  padding: 0.5rem;
-  transition: opacity 0.3s ease-in-out;
-  font-size: 1rem;
-  font-weight: 700;
+.sala-text-tierra {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 49px;
+    padding-right: 49px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #3BB2DE;
+    color: white;
 }
 
-.hover-container:hover .hover-text {
-  opacity: 1;
+.sala-text-cielo  {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 49px;
+    padding-right: 49px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #9A56A2;
+    color: white;
+}
+
+.sala-text-planetario {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 49px;
+    padding-right: 49px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #FFCC19;
+    color: white;
+}
+
+.sala-text-mar {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 49px;
+    padding-right: 49px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #413C6B;
+    color: white;
+}
+
+.sala-text-dino {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 44px;
+    padding-right: 44px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #6F8D41;
+    color: white;
+}
+
+.sala-text-atun {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #3BB2DE;
+    color: white;
 }
 
 li {
@@ -245,53 +320,45 @@ li {
     text-transform: uppercase;
 }
 
-.salas-container div {
-    flex: 1 1 22%;
-    max-width: 24%;
-    border-radius: 22px;
-    overflow: hidden;
-}
-
-.texto-sala {
-    margin-top: 4rem;
-    padding: 10px;
-    background-color: rgba(80, 158, 219, 0.3);
-    color: #113c6e;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 580;
-    font-style: italic;
-    word-break:break-all;
-    height: fit-content;
-    text-transform: uppercase;
-}
-
-.temporal {
-    border-radius: 22px;
-}
-
 /*-- Sensorama --*/
 .sensorama-container {
+    margin-top: 3rem;
     display: flex;
-    gap: 2rem;
     flex-wrap: wrap;
+    background-color: #3bb2de;
+    color: #FFF;
 }
 
 .sensorama-texto {
-    margin-top: 8rem;
     max-width: 50%;
-    height: auto;
+    height: ;
     display: flex;
     flex-direction: column;
-    vertical-align: middle;
-    gap: 1rem;
+    column-gap: 46px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 98px;
     word-break: break-all;
     word-wrap: break-word;
 }
 
 .sensorama {
-    width: 50%; 
+    max-width: 50%;
     height: auto;
+}
+
+.texto-sensorama1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.texto-sensorama1-1 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .texto-sensorama,
@@ -304,13 +371,25 @@ li {
 .texto-sensorama2 {
     font-size: 16px;
     font-weight: 500;
+    font-style: italic;
 }
 
-/*-- Recorrido --*/
-.recorrido {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
+.texto {
+    font-weight: 700;
+}
+
+.texto2 {
+    font-weight: 00;
+}
+
+.texto3 {
+    font-weight: 900;
+}
+
+.linea-amarilla {
+    position: inherit;
+    margin-top: 0;
+    width: 103.76px;
 }
 
 /*-- Ciencia al Aire Libre --*/

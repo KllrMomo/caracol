@@ -42,7 +42,7 @@ function Escuelas () {
 
         
         <section className="portada">
-          <img src="/images/Escuela.jpg" alt="Imagen Escuelas" className="imagen-portada"/>
+          <img src="/images/Escuela2.png" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
             <div className="banner-texto">
               <h1 className="banner-texto1">¡Trae a tus estudiantes a <br /> vivir la experiencia <br /> Caracol!</h1>
@@ -54,70 +54,74 @@ function Escuelas () {
         <section id="section1" className="visita-caracol">
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
 
-          <p className="texto-visita">Descubre las maravillas de la península de Baja California a través de nuestras salas de exhibición. </p>
+          <p className="texto-visita">Descubre
+            todas nuestras <span className="bold-letter">salas de exhibición</span> con <br /> un recorrido <span className="bold-letter">completo del museo</span></p>
+
+          <img src="/images/linea azul.png" alt="Linea Azul" className="linea-azul"/>
           
           <div className="salas-container2">
             <li className="item">
               <a href="https://www.caracolbc.org/salas#section2" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/Tierra.jpg" alt="Sala de la Tierra" className="sala-tierra" />
-                <span className="hover-text">Sala de la Tierra</span>
+                <img src="/images/Tierra1.png" alt="Sala de la Tierra" className="sala-tierra" />
+                <div className="sala-text-tierra">Sala de la Tierra</div>
               </a>
             </li>
 
             <li className="item">
               <a href="https://www.caracolbc.org/salas#section1" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/Cielo.jpg" alt="Sala del Cielo" className="sala-cielo" />
-                <span className="hover-text">Sala del Cielo</span>
-              </a>
-            </li>
-
-            <li className="item">
-              <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/Mar.jpg" alt="Sala del Mar" className="sala-mar" />
-                <span className="hover-text">Proyecto Sala del Mar</span>
+                <img src="/images/Cielo1.png" alt="Sala del Cielo" className="sala-cielo" />
+                <div className="sala-text-cielo">Sala del Cielo</div>
               </a>
             </li>
 
             <li className="item">
               <a href="https://www.caracolbc.org/salas#sectionplanetario" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/Planetario.jpg" alt="Planetario" className="planetario" />
-                <span className="hover-text">Planetario</span>
+                <img src="/images/Planetario1.png" alt="Planetario" className="planetario" />
+                <span className="sala-text-planetario">Planetario</span>
+              </a>
+            </li>
+
+            <li className="item">
+              <a href="https://www.caracolbc.org/salas#section3" target="_blank" rel="noopener noreferrer" className="hover-container">
+                <img src="/images/Mar1.png" alt="Sala del Mar" className="sala-mar" />
+                <span className="sala-text-mar">Sala del Mar</span>
               </a>
             </li>
 
             <li className="item">
               <a href="https://www.caracolbc.org/salas#section5" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/Dinosaurios.jpg" alt="Dinosaurios" className="dinosaurios" />
-                <span className="hover-text">Dinosaurios</span>
+                <img src="/images/Dinosaurios1.png" alt="Dinosaurios" className="dinosaurios" />
+                <span className="sala-text-dino">Dinosaurios entre nosotros</span>
               </a>
             </li>
 
             <li className="item">
               <a href="https://www.caracolbc.org/salas#section4" target="_blank" rel="noopener noreferrer" className="hover-container">
-                <img src="/images/temporal.jpg" alt="Sala Temporal" className="temporal2" />
-                <span className="hover-text">Sala Temporal: Aleta Azul, el Atún del Pacífico</span>
+                <img src="/images/Atun1.png" alt="Sala Temporal" className="temporal2" />
+                <span className="sala-text-atun">Aleta Azul, el Atún del Pacífico</span>
               </a>
             </li>
           </div>
 
-          <p className="texto-visita2">*Nuestro recorrido cuenta con una duración aproximada de 3 horas</p>
-          <p className="texto-visita3">Y exploren con sensorama</p>
+          <p className="texto-visita2">Nuestro recorrido cuenta con una duración aproximada de 3 horas* </p>
 
           <div className="sensorama-container">
             <img src="/images/sensorama.png" alt="Sensorama" className="sensorama" />
 
             <div className="sensorama-texto">
+              <p className="texto-sensorama1">Y exploren con <div className="texto-sensorama1-1">sensorama</div>
+              <img src="/images/linea amarilla.png" alt="Linea Amarilla" className="linea-amarilla"/></p>
+
               <p className="texto-sensorama">
-                Explora seres vivos, elementos de la naturaleza y objetos que tenemos  en el museo,<br /> utilizando solamente tu tacto.  <br />
-                ¿Qué habrá ahí? ¿Será un alga o piel de serpiente? <br /> <br /> Descúbrelo en este divertido taller.
+                Explora seres vivos, elementos de la naturaleza <br /> y objetos que tenemos en el museo, utilizando <br /> solamente tu tacto. <span className="texto">¿Qué habrá ahí? ¿Será un <br /> alga o piel de serpiente?</span>
+                <br /><br />
+                <span className="texto2">Descúbrelo en este divertido taller. </span>
               </p>
               <p className="texto-sensorama2">
-                <i class="ri-search-line"></i> Incluido en tu visita para escuelas con más de 180 alumnos
+                <i class="ri-search-line"></i> Incluido en tu visita al museo <span className="texto3"> Para <br /> escuelas con más de 180 alumnos </span>
               </p>
             </div>
           </div>
-
-          <p className="recorrido">¡PROGRAMA TU RECORRIDO!</p>
         </section>
 
         <section id="section2" className="ciencia-aire-libre">
