@@ -143,7 +143,7 @@ function Escuelas () {
                 </p>
                 <p className="texto-paseo2">
                   <span className="duracion-label">DURACIÓN</span> 
-                  <i className="ri-time-line"></i> 1.5 horas aprox.
+                  <i className="ri-time-line"></i> 1.5 horas aprox
                 </p>
               </div>
             </div>
