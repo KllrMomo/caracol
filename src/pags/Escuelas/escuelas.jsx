@@ -127,25 +127,22 @@ function Escuelas () {
         <section id="section2" className="ciencia-aire-libre">
           <img src="/images/CIENCIA-LIBRE.png" alt="Ciencia al Aire Libre" className="ciencia"/>
 
-          <p className="texto-ciencia"> <span className="bold-letter">Sumérgete</span> en esta experiencia <span className="bold-letter">única</span> y <br /> conecta con la <span className="bold-letter">naturaleza</span></p>
-
-          <img src="/images/linea azul.png" alt="Linea Azul" className="linea-azul"/>
+          <p className="texto-ciencia">Descubre las maravillas de nuestros ecosistemas y aprende sobre su flora y fauna en los recorridos interpretativos que tenemos para tus alumnos.</p>
+          <p className="texto-ciencia2">*Mínimo 30 alumnos</p>
 
           <div className="paseo-bahia-container">
-            <img src="/images/Bahia.png" alt="Paseo por la Bahía" className="paseo-bahia" />
+            <img src="/images/Bahia.jpg" alt="Paseo por la Bahía" className="paseo-bahia" />
             
             <div className="paseo-texto">
-              <div className="texto-bahia">
-                <p className="titulo-paseo">Paseo en la bahía</p>
-                <p className="texto-paseo1">
-                  Embárcate en una emocionante experiencia en barco mientras
-                  observas y conoces las maravillas <br /> del mar.
-                </p>
-                <p className="texto-paseo2">
-                  <span className="duracion-label">DURACIÓN</span> 
-                  <i className="ri-time-line"></i> 1.5 horas aprox.
-                </p>
-              </div>
+              <p className="titulo-paseo">Paseo en la bahía</p>
+              <p className="texto-paseo1">
+                Embárcate en una emocionante experiencia en barco <br /> mientras
+                observas y conoces las maravillas del mar.
+              </p>
+              <p className="texto-paseo2">
+                <span className="duracion-label">DURACIÓN</span> 
+                <i className="ri-time-line"></i> 1.5 horas aprox.
+              </p>
             </div>
           </div>
 
@@ -153,35 +150,33 @@ function Escuelas () {
             <img src="images/Bufadora.jpg" alt="Bufadora" className="bufadora-movil"/>
             
             <div className="bufadora-texto">
-              <div className="texto-bufadora">
-                <p className="titulo-bufadora">La bufadora desde <br /> el mar</p>
-                <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras <br /> navegas y aprendes sobre las criaturas que habitan nuestras costas. </p>
-                <p className="texto-bufadora2">
-                  <span className="duracion-label">DURACIÓN</span> 
-                  <i className="ri-time-line"></i> 4 horas aprox.
-                </p>
-              </div>
+              <p className="titulo-bufadora">La bufadora desde <br /> el mar</p>
+              <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras navegas y <br />aprendes  sobre las criaturas que habitan nuestras costas.</p>
+              <p className="texto-bufadora2">
+                <span className="duracion-label">DURACIÓN</span> 
+                <i className="ri-time-line"></i> 4 horas aprox.
+              </p>
             </div>
-            <img src= "images/Bufadora 1.png" alt="Bufadora" className="bufadora"/>
+            <img src="/images/Bufadora.jpg" alt="Bufadora" className="bufadora"/>
           </div>
 
           <div className="avistamiento-de-ballenas">
-            <img src="/images/Ballenas 1.png" alt="Avistamiento de Ballenas" className="ballenas"/>
+            <img src="/images/Ballenas.jpg" alt="Avistamiento de Ballenas" className="ballenas"/>
             
             <div className="ballenas-texto"> 
-              <div className="texto-ballenas">
-                <p className="titulo-ballenas"> Avistamiento De <br /> Ballenas</p>
-                <p className="texto-ballenas1">Conoce la flora y fauna de la región, mientras aprendes sobre los ecosistemas que nos rodean.</p>
-                <p className="texto-ballenas2">
-                  <span className="duracion-label">DURACIÓN</span> 
-                  <i className="ri-time-line"></i> 1.5 horas aprox.
-                </p>
-                <p className="texto-ballenas2">
-                  <i class="ri-search-line"></i> Únicamente en temporada de migración
-                </p>
-              </div>
+              <p className="titulo-ballenas"> Avistamiento De <br /> Ballenas</p>
+              <p className="texto-ballenas1">Conoce la flora y fauna de la región, mientras aprendes sobre <br /> los ecosistemas que nos rodean.</p>
+              <p className="texto-ballenas2">
+                <span className="duracion-label">DURACIÓN</span> 
+                <i className="ri-time-line"></i> 4 horas aprox.
+              </p>
+              <p className="texto-ballenas2">
+                <i class="ri-search-line"></i> Únicamente en temporada de migración
+              </p>
             </div>
           </div>
+
+          <p className="sumergete">Sumérgete en esta experiencia única y conecta con la naturaleza</p>
         </section>
 
         <section id="section3" className="mas-informacion">

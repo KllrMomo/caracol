@@ -133,7 +133,7 @@ id {
 }
 
 .visita {
-    margin-top: 40px;
+    margin-top: 3rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -325,13 +325,13 @@ li {
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    background-color: #9C56A4;
+    background-color: #3bb2de;
     color: #FFF;
 }
 
 .sensorama-texto {
     max-width: 50%;
-    height: auto;
+    height: ;
     display: flex;
     flex-direction: column;
     column-gap: 46px;
@@ -397,7 +397,6 @@ li {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 40px;
     overflow: hidden;
 }
 
@@ -405,6 +404,7 @@ li {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 3rem;
 }
 
 .texto-ciencia {
@@ -416,7 +416,6 @@ li {
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 0;
 }
 
 .texto-ciencia2 {
@@ -433,54 +432,46 @@ li {
 
 /*-- Paseo Bahía --*/
 .paseo-bahia-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 117px 20px 117px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
 .paseo-bahia {
-    width: 617px; 
-    height: 390px;
+  width: 50%; 
+  height: auto;
 }
 
 .paseo-texto {
+    max-width: 50%;
+    height: auto;
+    margin: 0 5rem;
     display: flex;
-    width: 617px;
-    background-color: rgba(228, 244, 253, 70%);
     flex-direction: column;
     vertical-align: middle;
-}
-
-.texto-bahia {
-    margin: 85px 84px;
-    max-width: 449px;
-    height: 218px;
+    gap: 1rem;
 }
 
 .titulo-paseo {
     font-size: 40px;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 36px;
     text-transform: capitalize;
 }
 
 .texto-paseo1,
 .texto-paseo2 {
-    margin-top: 36px;
-    font-size: 19px;
-    line-height: 24px;
-    font-weight: 500;
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 500;
 }
 
 .duracion-label {
-    background-color: #A8D8E9;
+    background-color: #a8d8e9;
     color: #113c6e;
     padding: 5px 10px;
     font-size: 16px;
     font-weight: 500;
-    height: 25px;
-    width: 92.02px;
     font-style: italic;
 
 }
@@ -495,13 +486,13 @@ li {
 /*-- Bufadora --*/
 .bufadora-container {
     display: flex;
+    gap: 5.89rem;
     flex-wrap: wrap;
-    margin: 50px 117px 20px 117px;
 }
 
 .bufadora {
-    width: 617px; 
-    height: 390px;
+    width: 50%; 
+    height: auto;
 }
 
 .bufadora-movil {
@@ -509,80 +500,58 @@ li {
 }
 
 .bufadora-texto {
+    max-width: 50%;
+    height: auto;
+    margin: 0 5rem;
     display: flex;
-    width: 617px;
-    max-height: 390px;
-    background-color: rgba(228, 244, 253, 70%);
     flex-direction: column;
     vertical-align: middle;
-}
-
-.texto-bufadora {
-    margin: 60px 74px;
-    max-width: 469px;
-    height: 270px;
+    gap: .5rem;
 }
 
 .titulo-bufadora {
     font-size: 40px;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 37px;
     text-transform: capitalize;
 }
 
 .texto-bufadora1,
 .texto-bufadora2 {
-    margin-top: 37px;
     font-size: 19px;
     font-weight: 500;
-}
-
-.texto-bufadora2 {
-    height: 25px;
 }
 
 
 /*-- Avistamiento de Ballenas --*/
 .avistamiento-de-ballenas {
     display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
-    margin: 50px 117px 20px 117px;
 }
 
 .ballenas {
-    width: 617px; 
-    height: 390px;
+    width: 50%; 
+    height: auto;
 }
 
 .ballenas-texto {
+    max-width: 50%;
+    margin: 0 5rem;
     display: flex;
-    width: 617px;
-    max-height: 390px;
-    background-color: rgba(228, 244, 253, 70%);
     flex-direction: column;
-    vertical-align: middle;
-}
-
-.texto-ballenas {
-    margin: 37px 78px;
-    max-width: 461px;
-    height: 316px;
+    gap: 1rem;
 }
 
 .titulo-ballenas {
     font-size: 40px;
     font-weight: 800;
-    margin-top: 0;
-    margin-bottom: 36px;
     text-transform: capitalize;
 }
 
 .texto-ballenas1,
 .texto-ballenas2 {
-    margin: 36px 0;
     font-size: 19px;
-    line-height: 24px;
+    line-height: 22px;
     font-weight: 500;
 }
 
