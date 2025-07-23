@@ -45,13 +45,15 @@ function Escuelas () {
           <img src="/images/Escuela2.png" alt="Imagen Escuelas" className="imagen-portada"/>
           <div className="banner">
             <div className="banner-texto">
-              <h1 className="banner-texto1">¡Trae a tus estudiantes a <br /> vivir la experiencia <br /> Caracol!</h1>
-              <p className="banner-texto2">Conoce todo lo que tenemos disponible para tu grupo escolar.</p>
+              <h1 className="banner-texto1">¡Trae a tus estudiantes a vivir la experiencia Caracol!</h1>
+              <p className="banner-texto2">Conoce todo lo que tenemos disponible <br /> para tu grupo escolar.</p>
             </div>
           </div>
         </section>
         
         <section id="section1" className="visita-caracol">
+          <img src="/images/triangle.png" alt="tirangulo" className="triangle-visita" />
+
           <img src="/images/VISITA-CARACOL.png" alt="Visita Caracol" className="visita"/>
 
           <p className="texto-visita">Descubre
@@ -109,8 +111,8 @@ function Escuelas () {
             <img src="/images/sensorama.png" alt="Sensorama" className="sensorama" />
 
             <div className="sensorama-texto">
-              <p className="texto-sensorama1">Y exploren con <div className="texto-sensorama1-1">sensorama</div>
-              <img src="/images/linea amarilla.png" alt="Linea Amarilla" className="linea-amarilla"/></p>
+              <p className="texto-sensorama1">Y exploren con <div className="texto-sensorama1-1">sensorama</div></p>
+              <img src="/images/linea amarilla.png" alt="Linea Amarilla" className="linea-amarilla"/>
 
               <p className="texto-sensorama">
                 Explora seres vivos, elementos de la naturaleza <br /> y objetos que tenemos en el museo, utilizando <br /> solamente tu tacto. <span className="texto">¿Qué habrá ahí? ¿Será un <br /> alga o piel de serpiente?</span>
@@ -142,7 +144,7 @@ function Escuelas () {
                   observas y conoces las maravillas <br /> del mar.
                 </p>
                 <p className="texto-paseo2">
-                  <span className="duracion-label">DURACIÓN</span> 
+                  <span className="duracion-label-paseo">DURACIÓN</span> 
                   <i className="ri-time-line"></i> 1.5 horas aprox
                 </p>
               </div>
@@ -157,7 +159,7 @@ function Escuelas () {
                 <p className="titulo-bufadora">La bufadora desde <br /> el mar</p>
                 <p className="texto-bufadora1">Disfruta la mejor vista de la Bufadora mientras <br /> navegas y aprendes sobre las criaturas que habitan nuestras costas. </p>
                 <p className="texto-bufadora2">
-                  <span className="duracion-label">DURACIÓN</span> 
+                  <span className="duracion-label-bufadora">DURACIÓN</span> 
                   <i className="ri-time-line"></i> 4 horas aprox.
                 </p>
               </div>
@@ -173,7 +175,7 @@ function Escuelas () {
                 <p className="titulo-ballenas"> Avistamiento De <br /> Ballenas</p>
                 <p className="texto-ballenas1">Conoce la flora y fauna de la región, mientras aprendes sobre los ecosistemas que nos rodean.</p>
                 <p className="texto-ballenas2">
-                  <span className="duracion-label">DURACIÓN</span> 
+                  <span className="duracion-label-ballenas">DURACIÓN</span> 
                   <i className="ri-time-line"></i> 1.5 horas aprox.
                 </p>
                 <p className="texto-ballenas2">
