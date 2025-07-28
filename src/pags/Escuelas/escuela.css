@@ -29,7 +29,7 @@ id {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 79px;
+    margin-top: 78px;
     overflow: hidden;
 }
 
@@ -49,7 +49,7 @@ id {
     width: 686px;
     height: 357px;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -70%); 
     top: 50%;
 }
 
@@ -136,11 +136,11 @@ id {
     position: relative;
     height: auto;
     overflow: hidden;
-    margin-top: 40px;
 }
 
 .visita {
     margin-bottom: 40px;
+    margin-top: 40px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -185,9 +185,31 @@ id {
     margin-right: 499px;
 }
 
+/*-- Figuras de Fondo --*/
 .triangle-visita {
-    position: relative;
+    position: absolute;
     z-index: -1;
+    top: 74px;
+    right: 144px;
+}
+
+.shape-visita {
+    position: absolute;
+    z-index: -1;
+    left: 200px;
+}
+
+.quarter-visita {
+    position: absolute;
+    z-index: -1;
+    right: 117px;
+    top: 726px;
+}
+
+.checker-visita {
+    position: absolute;
+    z-index: -1;
+    left: 72px;
 }
 
 /*-- Salas --*/
@@ -407,9 +429,7 @@ li {
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 40px;
-    margin-bottom: 131px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .ciencia {
@@ -442,6 +462,37 @@ li {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 0;
+}
+
+/*-- Figuras de Fondo --*/
+.triangle-libre {
+    position: absolute;
+    z-index: -1;
+    top: 230px;
+    left: 121px;
+}
+
+.shape-libre {
+    position: absolute;
+    z-index: -1;
+    rotate: 6deg;
+    top: 900px;
+    right: 46.98px;
+}
+
+.quarter-libre {
+    position: absolute;
+    z-index: -1;
+    top: 4px;
+    right: 144px;
+}
+
+.checker-libre {
+    position: absolute;
+    z-index: -1;
+    top: 1608px;
+    left: 54px;
+    bottom: 4px;
 }
 
 /*-- Paseo Bahía --*/
