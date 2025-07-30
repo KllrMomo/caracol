@@ -124,7 +124,8 @@ function Escuelas () {
               <img src="/images/linea amarilla.png" alt="Linea Amarilla" className="linea-amarilla"/>
 
               <p className="texto-sensorama">
-                Explora seres vivos, elementos de la naturaleza <br /> y objetos que tenemos en el museo, utilizando <br /> solamente tu tacto. <span className="texto">¿Qué habrá ahí? ¿Será un <br /> alga o piel de serpiente?</span>
+                Explora seres vivos, elementos de la naturaleza <br /> y objetos que tenemos en el museo, utilizando <br /> solamente tu tacto. 
+                <span className="texto">¿Qué habrá ahí? ¿Será un <br /> alga o piel de serpiente?</span>
                 <br /><br />
                 <span className="texto2">Descúbrelo en este divertido taller. </span>
               </p>
@@ -142,7 +143,9 @@ function Escuelas () {
 
           <img src="/images/triangle-libre.png" alt="tirangulo" className="triangle-libre" />
 
-          <p className="texto-ciencia"> <span className="bold-letter">Sumérgete</span> en esta experiencia <span className="bold-letter">única</span> y <br /> conecta con la <span className="bold-letter">naturaleza</span></p>
+          <p className="texto-ciencia"> <span className="bold-letter">Sumérgete</span> en esta experiencia <span className="bold-letter">única</span> y 
+            <br /> conecta con la <span className="bold-letter">naturaleza</span>
+          </p>
 
           <img src="/images/linea azul.png" alt="Linea Azul" className="linea-azul"/>
 
@@ -207,27 +210,39 @@ function Escuelas () {
         </section>
 
         <section id="section3" className="mas-informacion">
-          {/*<p className="info1">Para más información no dudes en contactarnos</p>*/}
           <p className="info1">Contactos</p>
+          <img src="images/quarter-contact.png" alt="quarter circle" className="quarter-contacto" />
+
           <div className="mas-informacion-container">
             <div className="telefono-text">
-              <p className="tel">Teléfono</p>
-              <p><a  href="tel:6461770897" className="tel1">(646) 177-0897</a></p>
-              <p><a href="tel:6461521993" className="tel2">(646) 152-1993</a></p>
+              <i class="ri-phone-fill"></i>
+              <p className="tel">Llama a los teléfonos</p>
+              <p><a  href="tel:6461770897" className="tel1"><span className="highlight">(646)</span> 177-0897</a></p>
+              <p><a href="tel:6461521993" className="tel2"><span className="highlight">(646)</span> 152-1993</a></p>
             </div>
+
+            <div className="vertical-line"></div>
+
             <div className="correo-text">
+              <i class="ri-mail-line"></i>
               <p className="correo">Correo Electrónico</p>
-              <p><a href="mailto:paola@caracolbc.org" className="correo1">paola@caracolbc.org</a></p>
+              <p><a href="mailto:paola@caracolbc.org" className="correo1">paola<span className="highlight">@</span>caracolbc.org</a></p>
             </div>
+
+            <div className="vertical-line"></div>
+
             <div className="whatsapp-text">
               <p className="whatsapp">WhatsApp</p>
-              <p><a className="whattel" href="https://wa.me/526464130544" target="_blank" rel="noopener noreferrer"> (646) 413-0544</a></p>
+              <p><a className="whattel" href="https://wa.me/526464130544" target="_blank" rel="noopener noreferrer"><span className="highlight">(646)</span> 413-0544</a></p>
+              <img src="images/Whatsapp escuelas 2.png" alt="QR WhatsApp" />
             </div>
           </div>
+
+          <img src="images/vector-contact.png" alt="quarter circle" className="vector-contacto" />
         </section>
 
         <section id="section4" className="calendario">
-          <p className="info1">Agenda tu Cita</p>
+          <p className="info2">Agenda tu Cita</p>
           <CalendarForm/>
         </section>
 

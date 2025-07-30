@@ -140,7 +140,7 @@ id {
 
 .visita {
     margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 80px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -189,21 +189,22 @@ id {
 .triangle-visita {
     position: absolute;
     z-index: -1;
-    top: 74px;
+    top: 60px;
     right: 144px;
 }
 
 .shape-visita {
     position: absolute;
     z-index: -1;
-    left: 200px;
+    top: 258px;
+    left: 181px;
 }
 
 .quarter-visita {
     position: absolute;
     z-index: -1;
     right: 117px;
-    top: 726px;
+    top: 778px;
 }
 
 .checker-visita {
@@ -218,7 +219,7 @@ id {
     flex-wrap: wrap;
     column-gap: 45px;
     row-gap: 44px;
-    padding-top: 32px;
+    padding-top: 40px;
     padding-left: 283px;
     padding-right: 283px;
     padding-bottom: 50px;
@@ -356,7 +357,7 @@ li {
 
 /*-- Sensorama --*/
 .sensorama-container {
-    margin-top: 3rem;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     background-color: #3BB2DE;
@@ -677,10 +678,24 @@ li {
     position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden;
 }
 
 .info1 {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    line-height: 56px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    background: #6C8C44;
+    color: #101A05;
+}
+
+
+.info2 {
     position: relative;
     width: 100%;
     font-size: 40px;
@@ -698,9 +713,11 @@ li {
 .mas-informacion-container {
     display: flex;
     flex-direction: row;
-    height: auto;
     justify-content: center;
-    gap: 5rem;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    gap: 57px;
 }
 
 .telefono-text, .correo-text, .whatsapp-text {
@@ -709,14 +726,58 @@ li {
 
 .tel, .correo, .whatsapp {
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 22px;
+    color: #263266;
 }
 
 a.tel1, a.tel2, a.correo1, a.whattel {
     color: #000;
     font-size: 18px;
     font-weight: 400;
+    text-decoration: none;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 221px;
+    background-color: #D8D8D8;
+}
+
+.telefono-text {
+    margin: 23.5px 0;
+}
+
+.correo-text {
+    margin: 42.5px 0;
+}
+
+.tel {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #263266;
+}
+
+.highlight {
+    color: #263266;
+}
+
+.ri-phone-fill, .ri-mail-line {
+    font-size: 48px;
+    color: #263266;
+}
+
+.quarter-contacto {
+    position: absolute;
+    z-index: -1;
+    top: 71px;
+    left: 51px;
+}
+
+.vector-contacto {
+    position: absolute;
+    z-index: -1;
+    right: 51px;
 }
 
 /*-- Documentos --*/
@@ -730,8 +791,8 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     line-height: 56px;
     padding: 20px 0;
     text-transform: uppercase;
-    background: rgb(168, 216, 233);
-    color: #231f40;
+    background: #FACB1F;
+    color: #3F3100;
 }
 
 .documentos-container {
@@ -803,6 +864,10 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.calendario {
+    margin-top: 90px;
 }
 
 /*-- Responsive Styles --*/
