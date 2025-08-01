@@ -48,9 +48,10 @@ img.block {
   transform: translateY(-50%);
   width: 64px;
   height: 64px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(0, 0, 0, 0.4);
   border: none;
-  border-radius: 50%;
+  border-radius: 100%;
+  background-color: transparent;
   font-size: 64px;
   font-weight: normal;
   cursor: pointer;

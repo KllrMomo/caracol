@@ -135,7 +135,7 @@ const CalendarForm = () => {
         )}
         
         <div style={{ textAlign: "center", margin: "10px 0" }}>
-          <button type="button" onClick={handleCancel}>Cancelar</button>
+          <button type="button" onClick={handleCancel} className="submit">Cancelar</button>
         </div>
       </div>
 
