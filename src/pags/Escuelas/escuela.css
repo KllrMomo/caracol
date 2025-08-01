@@ -560,7 +560,7 @@ li {
 .bufadora-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 117px 20px 117px;
+    margin: 0px 117px 20px 117px;
 }
 
 .bufadora {
@@ -800,30 +800,41 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
-    margin: 2rem 0;
+    margin-top: 40px;
 }
 
-.documento-item {
+.documento-item-lineamiento {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    padding: 20px 30px;
+}
+
+.documento-item-carta {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+    padding: 20px 30px;
 }
 
 .download-link {
     text-decoration: none;
-    color: #FFF;
-    font-weight: 400;
-    font-size: 16px;
-    background-color: #3bb2de;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: #3BB2DE;
+    font-weight: 700;
+    letter-spacing: 4.8%;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0;
     width: fit-content;
-    align-self: center;
+    align-self: left;
 }
 
 .download-link:hover {
-    background-color: #231f40;
-    color: #fff;
+    color: #231f40;
 }
 
 .ri-download-line {
@@ -834,6 +845,9 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
+    letter-spacing: 4.8%;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .download-link2 {
@@ -849,10 +863,6 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     align-self: center;
 }
 
-.download-link2:hover {
-    background-color: #231f40;
-    color: #fff;
-}
 
 .documento-item2 {
     display: flex;
@@ -860,6 +870,29 @@ a.tel1, a.tel2, a.correo1, a.whattel {
     text-align: center;
 }
 
+.horizontal-line {
+    width: 242px;
+    height: 2.5px;
+    background-color: #D8D8D8;
+}
+
+.checker-doc {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    margin-top: 120px;
+    margin-right: 60px;
+    
+}
+
+.quarter-doc {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    margin-top: 50px;
+}
+
+/* Calendario */
 .calendario-contianer {
     display: flex;
     flex-direction: column;
@@ -867,7 +900,26 @@ a.tel1, a.tel2, a.correo1, a.whattel {
 }
 
 .calendario {
+    position: relative;
+    width: 100%;
+    height: auto;
     margin-top: 90px;
+}
+
+.vector-cita {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+}
+
+.checker-cita {
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+}
+
+.footer-ni {
+    margin-top: 64px;
 }
 
 /*-- Responsive Styles --*/

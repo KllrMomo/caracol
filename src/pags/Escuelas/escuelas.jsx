@@ -243,6 +243,7 @@ function Escuelas () {
 
         <section id="section4" className="calendario">
           <p className="info2">Agenda tu Cita</p>
+          <img src="images/vector-cita.png" alt="Vector Cita" className="vector-cita"/>
           <CalendarForm/>
         </section>
 
@@ -251,29 +252,39 @@ function Escuelas () {
               <i className="ri-download-line"></i>
               Descarga el Catalogo Oficial 2025
             </a>
+            <img src="/images/checker-cita.png" alt="quarter circle" className="checker-cita" />
         </div>
 
+        
+
         <section id="section5" className="documentos">
+
+          <img src="images/quarter-doc.png" alt="checkers" className="quarter-doc" />
             <h3 className="doc-title">Documentos</h3>
+          <img src="images/checker-doc.png" alt="checkers" className="checker-doc" />
           <div className="documentos-container">
-              <div className="documento-item">
-                <p className="documento">Lineamientos de visita</p>
+              <div className="documento-item-lineamiento">
+                <p className="documento">Lineamientos de <br /> visita</p>
+
+                <div className="horizontal-line "></div>
+
                 <a href="https://docs.google.com/document/d/1d8DB42UijXPfTSBcnfxs3xEnxCoqRkVDFJmj9UXXVl8/edit?tab=t.0" target="_blank" className="download-link" rel="noopener noreferrer">
-                    <i className="ri-download-line"></i>
-                    Descargar
+                    Bajar Recurso <i class="ri-arrow-down-s-fill"></i>
                   </a>
               </div>
-              <div className="documento-item">
-                <p className="documento">Carta de deslinde de responsabilidad</p>
+              <div className="documento-item-carta">
+                <p className="documento">Carta de deslinde <br /> de responsabilidad</p>
+
+                <div className="horizontal-line "></div>
+
                 <a href="https://docs.google.com/document/d/1d8DB42UijXPfTSBcnfxs3xEnxCoqRkVDFJmj9UXXVl8/edit?tab=t.0" target="_blank" className="download-link" rel="noopener noreferrer">
-                    <i className="ri-download-line"></i>
-                    Descargar
+                    Bajar Recurso <i class="ri-arrow-down-s-fill"></i>
                   </a>
               </div>
           </div>
         </section>
 
-        <footer>
+        <footer className="footer-ni">
           <Footer />
         </footer>
 

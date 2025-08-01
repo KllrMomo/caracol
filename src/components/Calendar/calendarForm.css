@@ -42,7 +42,7 @@
     flex-direction: column;
 }
 
-button {
+.submit, .form button{
     color: #FFF;
     background-color: #3bb2de;
     padding: 10px 20px;
@@ -58,7 +58,7 @@ button {
     margin: 0;
 }
 
-button:hover {
+.submit:hover, .form button:hover {
     cursor: pointer;
     background-color: #413c6b;
     color: #fff;
